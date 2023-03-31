@@ -95,6 +95,57 @@ body .overflow-auto-hidden {
     background: rgba(206, 212, 218, 0.8);
   }
 }
+[data-page-name=landing] .heroSection .carousel .carousel-inner .carousel-item {
+  aspect-ratio: 1440/631;
+  background-image: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+[data-page-name=landing] .heroSection .carousel .carousel-inner .carousel-item .carousel-item-content {
+  height: 100%;
+}
+[data-page-name=landing] .heroSection .carousel .carousel-inner .carousel-item .carousel-item-content .carousel-item-content-inner {
+  height: 100%;
+  align-items: center;
+}
+[data-page-name=landing] .heroSection .carousel .carousel-inner .carousel-item .carousel-item-content .carousel-item-content-inner .carousel-item-content-heading {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 73px;
+  color: #fff;
+}
+[data-page-name=landing] .heroSection .carousel .carousel-inner .carousel-item .carousel-item-content .carousel-item-content-inner .chooseProgramBtn {
+  margin-top: 65px;
+}
+[data-page-name=landing] .heroSection .carousel .carousel-inner .carousel-item .carousel-item-content .carousel-item-content-inner .chooseProgramBtn a {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  background: #B4111A;
+  border-radius: 5px;
+  width: 216px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all;
+  border: 2px solid #B4111A;
+}
+[data-page-name=landing] .heroSection .carousel .carousel-inner .carousel-item .carousel-item-content .carousel-item-content-inner .chooseProgramBtn a:hover {
+  color: #B4111A;
+  background: #fff;
+  border: 2px solid #B4111A;
+}
+[data-page-name=landing] .heroSection .carousel [class*=carousel-control-] .carouselBtn img {
+  width: 48px;
+  height: 48px;
+}
 [data-page-name=viewAllPartners] .allPartnersFluid .allpartnersContainers .allPartnersHeading {
   font-family: "Poppins";
   font-style: normal;
@@ -104,4 +155,23 @@ body .overflow-auto-hidden {
   color: #000;
   text-align: center;
   padding-top: 84px;
+}
+[data-page-name=viewAllPartners] .allPartnersFluid .allpartnersContainers .inputBox .inputClass {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  border: none;
+  padding: 32px 466px 32px 135px;
+  position: relative;
+}
+[data-page-name=viewAllPartners] .allPartnersFluid .allpartnersContainers .inputBox .inputClass.colourClass {
+  background-color: #F6F8F9;
+}
+[data-page-name=viewAllPartners] .allPartnersFluid .allpartnersContainers .inputBox .capMain {
+  position: absolute;
+  width: 22.87px;
+  height: 20px;
+  left: 0;
+  top: 0;
 }/*# sourceMappingURL=style.min.css.map */

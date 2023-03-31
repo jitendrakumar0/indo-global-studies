@@ -1,6 +1,184 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=example] {
+
     @include media-breakpoint(basic) {
+        
+        .topNavbar {
+            height: 89px;
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        width: 207px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        padding: 0 13px;
+                        & .linkAnchor {
+                            font-family: 'Roboto';
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #3C3C3C;
+                            transition: 0.3s ease;
+                            &:hover,
+                            &.active {
+                                color: #E32333;
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .partnerBtn {
+                    width: 105px;
+                    height: 33px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #E32333;
+                    border: 1px solid #E32333;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    &:hover {
+                        background-color: #E32333;
+                        color: #ffffff;
+                    }
+                }
+                & .loginBtn {
+                    width: 105px;
+                    height: 33px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                    background-color: #E32333;
+                    border: 1px solid #E32333;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    margin: 0 23px 0 17px;
+                    &:hover {
+                        background-color: white;
+                        color: #E32333;
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                margin-right: 28px;
+                & img {
+                    width: 16px;
+                    height: 10px;
+                }
+            }
+        }
+        .menuOffcanvas {
+            width: 280px !important;
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & img {
+                        width: 180px;
+                    }
+                }
+                & .btn-close {
+                    background-size: 0.8em;
+                }
+            }
+            & .offcanvas-body {
+                padding-top: 0;
+                & .linkItems {
+                    & .linkItem {
+                        padding: 7px 0px;
+                        & .linkAnchor {
+                            font-family: 'Roboto';
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #3C3C3C;
+                            transition: 0.3s ease;
+                            &:hover,
+                            &.active {
+                                color: #E32333;
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-footer {
+                & .contactBox {
+                    & .socialIcons {
+                        & .socialIcon {
+                            height: 16px;
+                            width: 16px;
+                            display: flex;
+                            & img {
+                                height: 16px;
+                                width: 16px;
+                            }
+                            &:nth-child(2) {
+                                margin: 0 12px;
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        height: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Roboto';
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #2C2C2C;
+                        & img {
+                            height: 16px;
+                            width: 15px;
+                            margin-right: 9px;
+                        }
+                    }
+                }
+                & .partnerBtn {
+                    height: 33px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #E32333;
+                    border: 1px solid #E32333;
+                }
+                & .loginBtn {
+                    height: 33px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                    background-color: #E32333;
+                    border: 1px solid #E32333;
+                }
+                & .consultationBtn {
+                    height: 58px;
+                    background: #E32333;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    padding: 0 17px;
+                    & img {
+                        height: 27px;
+                        width: 27px;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -24,7 +202,7 @@
     @include media-breakpoint-down(md) {}
 
     @include media-breakpoint-down(sm) {}
-}
+
 
 [data-bs-theme=dark] {
     & [data-page-name=example] {

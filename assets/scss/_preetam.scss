@@ -4,6 +4,7 @@
         
         .topNavbar {
             height: 86px;
+            background-color: #F6F8F9;
             & .logoBox {
                 & .logoAnchor {
                     & .logoImg {
@@ -73,11 +74,22 @@
                     }
                 }
                 & .heartIcon {
-                    height: 25px;
+                    & img {
+                        height: 25px;
+                    }
                     margin: 0 45px;
                 }
                 & .searchIcon {
-                    height: 25px;
+                    & img {
+                        height: 25px;
+                    }
+                }
+                & .menuIcon {
+                    & img {
+                        height: 20px;
+                        width: 20px;
+                        margin-left: 15px;
+                    }
                 }
             }
             & .mobMenuIcon {
@@ -93,7 +105,8 @@
             & .offcanvas-header {
                 & .offcanvas-title {
                     & img {
-                        width: 180px;
+                        width: 87px;
+                        height: 50px;
                     }
                 }
                 & .btn-close {
@@ -104,13 +117,13 @@
                 padding-top: 0;
                 & .linkItems {
                     & .linkItem {
-                        padding: 7px 0px;
+                        padding: 6px 0px;
                         & .linkAnchor {
-                            font-family: 'Roboto';
-                            font-weight: 700;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
                             font-size: 14px;
-                            line-height: 18px;
-                            color: #3C3C3C;
+                            color: #000000;
                             transition: 0.3s ease;
                             &:hover,
                             &.active {
@@ -121,70 +134,200 @@
                 }
             }
             & .offcanvas-footer {
-                & .contactBox {
-                    & .socialIcons {
-                        & .socialIcon {
-                            height: 16px;
-                            width: 16px;
-                            display: flex;
-                            & img {
-                                height: 16px;
-                                width: 16px;
-                            }
-                            &:nth-child(2) {
-                                margin: 0 12px;
-                            }
-                        }
-                    }
-                    & .callBtn {
-                        height: 18px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-family: 'Roboto';
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 18px;
-                        color: #2C2C2C;
-                        & img {
-                            height: 16px;
-                            width: 15px;
-                            margin-right: 9px;
-                        }
-                    }
-                }
-                & .partnerBtn {
-                    height: 33px;
-                    font-family: 'Roboto';
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 14px;
-                    color: #E32333;
-                    border: 1px solid #E32333;
-                }
+                padding: 1rem;
+                background-color: white;
                 & .loginBtn {
-                    height: 33px;
-                    font-family: 'Roboto';
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 14px;
-                    color: #FFFFFF;
-                    background-color: #E32333;
-                    border: 1px solid #E32333;
-                }
-                & .consultationBtn {
-                    height: 58px;
-                    background: #E32333;
-                    font-family: 'Roboto';
-                    font-weight: 700;
+                    width: 100%;
+                    height: 39px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
                     font-size: 14px;
-                    line-height: 18px;
+                    color: #B4111A;
+                    border: 1px solid #B4111A;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    &:hover {
+                        background-color: #B4111A;
+                        color: #ffffff;
+                    }
+                }
+                & .registerBtn {
+                    width: 100%;
+                    height: 39px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-size: 14px;
                     color: #FFFFFF;
-                    padding: 0 17px;
-                    & img {
-                        height: 27px;
-                        width: 27px;
-                        margin-right: 16px;
+                    background-color: #B4111A;
+                    border: 1px solid #B4111A;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    border-radius: 5px;
+                    &:hover {
+                        background-color: white;
+                        color: #B4111A;
+                    }
+                }
+            }
+        }
+        .footer {
+            background-color: #f6f8f9;
+            padding-top: 3rem;
+            padding-bottom: 1.5rem;
+            & .footerHeading {
+                color: #697988;
+                font-family: 'Poppins';
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+            & .certificateImg {
+                & img {
+                    width: 100%;
+                    max-width: 130px;
+                }
+            }
+            & .footerText {
+                font-size: 17px;
+                font-family: 'Poppins';
+                color: #90a4b8;
+                &.footerLink{
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        color: #B4111A;
+                    }
+                }
+            }
+            & .flagImg {
+                width: 40px;
+                height: 30px;
+                margin-right: 10px;
+            }
+            & .socialBox {
+                & .socialLinks {
+                    margin-bottom: 23px;
+                    & a {
+                        & img {
+                            height: 20px;
+                            filter: invert(60%) sepia(25%) saturate(244%) hue-rotate(169deg) brightness(101%) contrast(96%);
+                            transition: 0.3s ease-in-out;
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+            & .middleRow {
+                & .usefulHeader {
+                    color: #697988;
+                    font-family: 'Poppins';
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                & .usefulLink {
+                    & a {
+                        margin: 0 10px;
+                        color: #90a4b8;
+                        font-family: 'Poppins';
+                        font-size: 16px;
+                        font-weight: 500;
+                        transition: 0.3s ease-in-out;
+                        &:hover {
+                            color: #B4111A;
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .copyRightText {
+                    color: #90a4b8;
+                    font-size: 16px;
+                }
+                & .bottomLinks {
+                    color: #90a4b8;
+                    font-size: 16px;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        color: #B4111A;
+                    }
+                    &:nth-child(2) {
+                        border-left: 1px solid #dbe4ec;
+                        border-right: 1px solid #dbe4ec;
+                    }
+                }
+            }
+        }
+        .expertSection{
+            & .expertSectionInner{
+                background-color: #f6f8f9;
+                padding: 24px;
+                border-radius: 12px;
+                & .sectionHeading{
+                    font-size: 36px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #000000;
+                    & span {
+                        color: #B4111A;
+                    }
+                }
+                & .agentCardWrapper {
+                    --bs-gutter-y: 2rem !important;
+                    --bs-gutter-x: 2rem !important;
+                    & .agentCard {
+                        background-color: white;
+                        text-align: center;
+                        border-radius: 12px;
+                        padding-bottom: 15px;
+                        padding-top: 40px;
+                        & .agentImg {
+                            height: 150px;
+                            width: 150px;
+                            & img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        & .agentName {
+                            margin-top: 1.5rem;
+                            font-size: 16px;
+                            color: #212529;
+                            font-weight: 600;
+                        }
+                        & .agentDes {
+                            color: #00000050;
+                            font-size: 16px;
+                            margin-bottom: 1.5rem;
+                        }
+                        & .callBtn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 48px;
+                            background-color: #b20e1930;
+                            color: #b20e19;
+                            border-radius: 8px;
+                            transition: 0.3s ease-in-out;
+                            & img {
+                                margin-right: 5px;
+                                transition: 0.3s ease-in-out;
+                            }
+                            &:hover {
+                                background-color: #B4111A;
+                                color: #ffffff;
+                                & img {
+                                    filter: brightness(100);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -203,15 +346,507 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        .topNavbar {
+            height: 80px;
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        width: 140px;
+                        height: 80px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                            // white-space: nowrap;
+                            font-size: 15px;
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .loginBtn {
+                    font-size: 15px;
+                    height: 38px;
+                    width: 102px;
+                    &:hover {
+                    }
+                }
+                & .registerBtn {
+                    font-size: 15px;
+                    height: 38px;
+                    width: 125px;
+                    &:hover {
+                    }
+                }
+                & .heartIcon {
+                    margin: 0 25px;
+                    & img {
+                        height: 22px;
+                    }
+                }
+                & .searchIcon {
+                    & img {
+                        height: 22px;
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        
+        .footer {
+            & .footerHeading {
+            }
+            & .certificateImg {
+                & img {
+                }
+            }
+            & .footerText {
+                &.footerLink{
+                    &:hover {
+                    }
+                }
+            }
+            & .flagImg {
+            }
+            & .socialBox {
+                & .socialLinks {
+                    & a {
+                        & img {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+            & .middleRow {
+                & .usefulHeader {
+                }
+                & .usefulLink {
+                    & a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .copyRightText {
+                }
+                & .bottomLinks {
+                    &:hover {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        
+        .topNavbar {
+            height: 70px;
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        width: 120px;
+                        height: 70px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        padding: 0 8px;
+                        & .linkAnchor {
+                            font-size: 13.5px;
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .loginBtn {
+                    font-size: 13.5px;
+                    height: 36px;
+                    width: 85px;
+                    &:hover {
+                    }
+                }
+                & .registerBtn {
+                    font-size: 13.5px;
+                    height: 36px;
+                    width: 107px;
+                    margin: 0 0px 0 10px;
+                    &:hover {
+                    }
+                }
+                & .heartIcon {
+                    margin: 0 15px;
+                    & img {
+                        height: 20px;
+                    }
+                }
+                & .searchIcon {
+                    & img {
+                        height: 20px;
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        .footer {
+            & .footerHeading {
+                font-size: 17px;
+            }
+            & .certificateImg {
+                & img {
+                }
+            }
+            & .footerText {
+                font-size: 15px;
+                &.mb-5 {
+                    margin-bottom: 2.3rem !important;
+                }
+                &.footerLink{
+                    &:hover {
+                    }
+                }
+            }
+            & .flagImg {
+            }
+            & .socialBox {
+                & .socialLinks {
+                    & a {
+                        & img {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+            & .middleRow {
+                padding-top: 2.5rem !important;
+                padding-bottom: 2.5rem !important;
+                & .usefulHeader {
+                    font-size: 17px;
+                }
+                & .usefulLink {
+                    & a {
+                        font-size: 15px;
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .copyRightText {
+                }
+                & .bottomLinks {
+                    &:hover {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        
+        .topNavbar {
+            height: 60px;
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        height: 60px;
+                        width: 90px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .loginBtn {
+                    &:hover {
+                    }
+                }
+                & .registerBtn {
+                    &:hover {
+                    }
+                }
+                & .heartIcon {
+                    & img {
+                    }
+                }
+                & .searchIcon {
+                    & img {
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        .footer {
+            & .footerHeading {
+            }
+            & .certificateImg {
+                & img {
+                }
+            }
+            & .footerText {
+                &.footerLink{
+                    &:hover {
+                    }
+                }
+            }
+            & .flagImg {
+            }
+            & .socialBox {
+                & .socialLinks {
+                    & a {
+                        & img {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+            & .middleRow {
+                & .usefulHeader {
+                }
+                & .usefulLink {
+                    & a {
+                        margin: 0;
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .copyRightText {
+                }
+                & .bottomLinks {
+                    &:hover {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        
+        .topNavbar {
+            height: 60px;
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        height: 55px;
+                        width: 85px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .loginBtn {
+                    &:hover {
+                    }
+                }
+                & .registerBtn {
+                    &:hover {
+                    }
+                }
+                & .heartIcon {
+                    & img {
+                    }
+                }
+                & .searchIcon {
+                    & img {
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        .footer {
+            & .footerHeading {
+            }
+            & .certificateImg {
+                & img {
+                }
+            }
+            & .footerText {
+                &.footerLink{
+                    &:hover {
+                    }
+                }
+            }
+            & .flagImg {
+            }
+            & .socialBox {
+                & .socialLinks {
+                    & a {
+                        & img {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+            & .middleRow {
+                & .usefulHeader {
+                }
+                & .usefulLink {
+                    & a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .copyRightText {
+                }
+                & .bottomLinks {
+                    &:hover {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        
+        .topNavbar {
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        height: 50px;
+                        width: 80px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .loginBtn {
+                    &:hover {
+                    }
+                }
+                & .registerBtn {
+                    &:hover {
+                    }
+                }
+                & .heartIcon {
+                    & img {
+                    }
+                }
+                & .searchIcon {
+                    & img {
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        .footer {
+            & .footerHeading {
+            }
+            & .certificateImg {
+                & img {
+                }
+            }
+            & .footerText {
+                &.footerLink{
+                    &:hover {
+                    }
+                }
+            }
+            & .flagImg {
+            }
+            & .socialBox {
+                & .socialLinks {
+                    & a {
+                        & img {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+            & .middleRow {
+                & .usefulHeader {
+                }
+                & .usefulLink {
+                    & a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .copyRightText {
+                }
+                & .bottomLinks {
+                    &:hover {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
+    }
 
 
 [data-bs-theme=dark] {

@@ -98,221 +98,132 @@
 
         <!-- style -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/libs/node_modules/plyr/dist/plyr.css" />
+        <!-- <link rel="stylesheet" href="assets/libs/node_modules/plyr/dist/plyr.css" /> -->
+        <link rel="stylesheet" href="assets/libs/node_modules/select2/dist/css/select2.min.css"/>
         <link rel="stylesheet" href="assets/css/style.min.css" />
-        <link rel="stylesheet" href="assets/libs/node_modules/swiper/swiper-bundle.min.css"/>
+        <!-- <link rel="stylesheet" href="assets/libs/node_modules/swiper/swiper-bundle.min.css"/> -->
 
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
+    <!-- <body oncontextmenu="return false"> -->
     <body>
         <main class="container-fluid">
             <div class="row mainInner">
                 <div class="col-12 px-0 flex-fill" data-page-name="landing">
+                    <nav class="w-100" style="height:86px;">
 
-                    <div class="container-fluid heroSection">
-                        <div class="row">
-                            <div class="col-12 px-0">
-                                <div id="carouselExample" class="carousel slide carousel-fade">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active" style="--bg:url(../img/banner1.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-4 mx-sm-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-n5">
-                                                        <div class="row mt-lg-n5 mx-lg-5">
-                                                            <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
-                                                            <div class="col-12 chooseProgramBtn">
-                                                                <a href="javascript:;">Choose a program</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                    </nav>
+                    <div class="container-fluid heroSection" style="--bg:url(../img/banner1.png); --m_bg:url(../img/m_banner1.png);">
+                        <div class="container heroSectionInner">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 heroSectionHeading">FIND YOUR <span>DREAM COLLEGE</span></div>
+                                        <div class="col-12">
+                                            <div class="row mx-0 heroSectionSearchBox">
+                                                <div class="col-5 heroSectionSearchSelect" style="--bg:url('../img/svg/locationRed.svg');">
+                                                    <select name="Country" id="Country" data-placeholder="Country">
+                                                        <option></option>
+                                                        <option value="India">India</option>
+                                                        <option value="US">US</option>
+                                                        <option value="Ingland">Ingland</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-7 heroSectionSearchSelect" style="--bg:url('../img/svg/universityRed.svg');">
+                                                    <select name="University" id="University" data-placeholder="University">
+                                                        <option></option>
+                                                        <option value="Rajasthan">Rajasthan</option>
+                                                        <option value="Suresh Gyan Vihar">Suresh Gyan Vihar</option>
+                                                        <option value="Jaipur National University">Jaipur National University</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" style="--bg:url(../img/banner2.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-4 mx-sm-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-n5">
-                                                        <div class="row mt-lg-n5 mx-lg-5">
-                                                            <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
-                                                            <div class="col-12 chooseProgramBtn">
-                                                                <a href="javascript:;">Choose a program</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div class="col-12">
+                                            <div class="row mx-0">
+                                                <div class="col-12 heroSectionSearchInput">
+                                                    <input type="text" name="" id="" placeholder="Serach Course Name, Keywords">
+                                                    <a href="javascript:;" class="searchBtn">
+                                                        <img src="./assets/img/svg/searchWhite.svg" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" style="--bg:url(../img/banner3.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-4 mx-sm-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-lg-n5">
-                                                        <div class="row mt-n5 mx-lg-5">
-                                                            <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
-                                                            <div class="col-12 chooseProgramBtn">
-                                                                <a href="javascript:;">Choose a program</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div class="col-xl-6 col-lg-8 col-12 pe-5 ps-4 ms-n2 heroSectionHeading2">Educational excellence with no borders.</div>
+                                        <div class="col-12 quickTags">
+                                            <div class="row quickTagsInner gy-3">
+                                                <div class="col-auto quickTag active">
+                                                    <a href="javascript:;">I am a student exploring studying abroad</a>
+                                                </div>
+                                                <div class="col-auto quickTag">
+                                                    <a href="javascript:;">I am a recruitment partner</a>
+                                                </div>
+                                                <div class="col-auto quickTag">
+                                                    <a href="javascript:;">I work at a school</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="row">
-                                                    <div class="col-12 carouselBtn">
-                                                        <img src="./assets/img/svg/sliderArrowLeftLight.svg" alt="sliderArrowLeftLight">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="row">
-                                                    <div class="col-12 carouselBtn">
-                                                        <img src="./assets/img/svg/sliderArrowRightLight.svg" alt="sliderArrowRightLight">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="container-fluid talkToExpert">
+                        <div class="container talkToExpertInner">
+                            <div class="row talkToExpertInner2">
+                                <div class="col-xl-3 col-md talkToExpertHeading d-inline-flex align-items-center flex-nowrap text-nowrap">
+                                    Talk to an <span>Expert</span>
+                                </div>
+                                <div class="col talkToExpertFor">
+                                    <div class="row align-items-center h-100 justify-content-center">
+                                        <div class="col-auto d-xl-inline-flex d-grid gy-md-1 gap-md-3 talkToExpertForInner align-items-center">
+                                            <div class="row mx-0 flex-nowrap align-items-center">
+                                                <img src="./assets/img/svg/universityWhite.svg" alt="">
+                                                <span class="d-inline-grid">For Student</span>
+                                            </div>
+                                            <a class="justify-content-center" href="javascript:;">Talk to our team</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col talkToExpertFor business">
+                                    <div class="row align-items-center h-100 justify-content-md-end justify-content-center">
+                                        <div class="col-auto d-xl-inline-flex d-grid gy-md-1 gap-md-3 talkToExpertForInner align-items-center">
+                                            <div class="row mx-0 flex-nowrap align-items-center">
+                                                <img src="./assets/img/svg/handShakeWhite.svg" alt="">
+                                                <span class="d-inline-grid">For Business</span>
+                                            </div>
+                                            <a class="justify-content-center" href="javascript:;">Talk to our team</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="container-fluid popularSeachers">
+                        <div class="container popularSeachersInner">
+                            <div class="row">
+                                <div class="col-12">Popular Seachers</div>
+                            </div>
+                        </div>
+                    </div> -->
 
                 </div>
             </div>
         </main>
-        <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
-            <div class="offcanvas-header">
-                <a href="index.html" class="offcanvas-title" id="menuOffcanvasLabel">
-                    <img src="assets/img/logo/logo.svg" alt="">
-                </a>
-                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="m-0 p-0 list-unstyled linkItems">                                       
-                    <li class="linkItem"><a class="linkAnchor" href="javascript::">About Us</a></li>
-                    <li class="linkItem"><a class="linkAnchor collapseLink collapsed" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">indo-global-studies Abroad</a>
-                        <div class="collapse multi-collapse" id="multiCollapseExample1">
-                            <ul class="m-0 ps-2 list-unstyled linkItems"> 
-                                <li class="linkItem"><a class="linkAnchor" href="javascript::">indo-global-studies Abroad 1</a></li>
-                                <li class="linkItem"><a class="linkAnchor" href="javascript::">indo-global-studies Abroad 2</a></li>
-                                <li class="linkItem"><a class="linkAnchor" href="javascript::">indo-global-studies Abroad 3</a></li>
-                                <li class="linkItem"><a class="linkAnchor" href="javascript::">indo-global-studies Abroad 4</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="linkItem"><a class="linkAnchor" href="javascript::">Immigration</a></li>
-                    <li class="linkItem"><a class="linkAnchor" href="javascript::">Countries</a></li>
-                    <li class="linkItem"><a class="linkAnchor" href="javascript::">News</a></li>
-                    <li class="linkItem"><a class="linkAnchor" href="javascript::">Reviews</a></li>
-                </ul>
-            </div>
-            <div class="offcanvas-footer">
-                <div class="row mx-0">
-                    <div class="col-6">
-                        <a href="javascript:;" class="partnerBtn d-flex align-items-center justify-content-center">For Partners</a>
-                    </div>
-                    <div class="col-6">
-                        <a href="javascript:;" class="loginBtn d-flex align-items-center justify-content-center">Login / Register</a>
-                    </div>
-                    <div class="contactBox col-12 d-flex align-items-center justify-content-between py-3">
-                        <div>
-                            <a href="tel:(044) 484 09 58" class="callBtn"><img src="assets/img/svg/phoneDark.svg" alt=""> (044) 484 09 58</a>
-                        </div>
-                        <div class="socialIcons d-flex align-items-center justify-content-end">
-                            <a href="javascript:;" class="socialIcon">
-                                <img src="assets/img/facebookIcon.svg" alt="">
-                            </a>
-                            <a href="javascript:;" class="socialIcon">
-                                <img src="assets/img/instaIcon.svg" alt="">
-                            </a>
-                            <a href="javascript:;" class="socialIcon">
-                                <img src="assets/img/youtubeIcon.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <a href="javascript:;" class="consultationBtn col-12 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/svg/consultWhite.svg" alt="">
-                        <span>Free Consultation</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="navbarStickyIcons d-none d-lg-block d-xl-none">
-            <a class="stickyIcon" href="javascript:;">
-                <div class="stickyImg">
-                    <img src="assets/img/facebookIcon.svg" alt="">
-                </div>
-                <div class="hiddenText">Facebook</div>
-            </a>
-            <a class="stickyIcon" href="javascript:;">
-                <div class="stickyImg">
-                    <img src="assets/img/instaIcon.svg" alt="">
-                </div>
-                <div class="hiddenText">Instagram</div>
-            </a>
-            <a class="stickyIcon" href="javascript:;">
-                <div class="stickyImg">
-                    <img src="assets/img/youtubeIcon.svg" alt="">
-                </div>
-                <div class="hiddenText">Youtube</div>
-            </a>
-            <a class="stickyIcon" href="tel:(044) 484 09 58">
-                <div class="stickyImg">
-                    <img src="assets/img/svg/phoneDark.svg" alt="">
-                </div>
-                <div class="hiddenText">(044) 484 09 58</div>
-            </a>
-            <a class="stickyIcon" href="javascript:;">
-                <div class="stickyImg">
-                    <img src="assets/img/svg/consultRed.svg" alt="">
-                </div>
-                <div class="hiddenText">Free Consultation</div>
-            </a>
-        </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/node_modules/plyr/dist/plyr.min.js"></script>
-        <script src="assets/libs/node_modules/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/libs/node_modules/select2/dist/js/select2.min.js"></script>
+        <!-- <script src="assets/libs/node_modules/plyr/dist/plyr.min.js"></script> -->
+        <!-- <script src="assets/libs/node_modules/swiper/swiper-bundle.min.js"></script> -->
         <script type="module" src="assets/js/main.min.js"></script>
-        <script>
+        <!-- <script>
             const players = document.querySelectorAll('.player');
 
             players.forEach(function(player) {
             const plyr = new Plyr(player);
             });
 
-        </script>
+        </script> -->
 
         
-        <script>
-            const swiper = new Swiper('.heroswiper', {
-            // Optional parameters
-            // direction: 'vertical',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                type: "fraction",
-            },
-
-            // Navigation arrows
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
-
-            // And if we need scrollbar
-            // scrollbar: {
-            //     el: '.swiper-scrollbar',
-            // },
-            });
-        </script>
     </body>
 </html>

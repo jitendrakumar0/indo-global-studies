@@ -1,6 +1,79 @@
-// ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=example] {
+// ? @@@@@@@@@@@@@@@@@@@@@@[  landing start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=landing] {
     @include media-breakpoint(basic) {
+        
+        & .heroSection {
+            & .carousel {
+                & .carousel-inner {
+                    & .carousel-item {
+                        aspect-ratio: 1440/ calc(720 - 89);
+                        background-image: var(--bg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        & .carousel-item-content {
+                            height: 100%;
+                            & .carousel-item-content-inner {
+                                height: 100%;
+                                align-items: center;
+                                & .carousel-item-content-heading {
+                                    font-family: 'Gilroy-Bold';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 68px;
+                                    line-height: 73px;
+
+                                    color: $white;
+                                }
+                                & .chooseProgramBtn {
+                                    margin-top: 65px;
+                                    & a {
+                                        font-family: 'Gilroy-Bold';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 18px;
+                                        line-height: 22px;
+
+                                        color: $white;
+                                        background: $theme1;
+                                        border-radius: 5px;
+                                        width: 216px;
+                                        height: 56px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        transition: .3s all;
+                                        border: 2px solid $theme1;
+                                        &:hover {
+                                            color: $theme1;
+                                            background: $white;
+                                            border: 2px solid $theme1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+
+                        }
+                    }
+                }
+                & [class*=carousel-control-] {
+                    & .carouselBtn {
+                        & img {
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                    &.carousel-control-prev {
+    
+                    }
+                    &.carousel-control-next {
+                        
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -27,7 +100,7 @@
 }
 
 [data-bs-theme=dark] {
-    & [data-page-name=example] {
+    & [data-page-name=landing] {
         @include dark-media-breakpoint(basic) {
             
         }
@@ -58,5 +131,5 @@
     }
 }
 
-// ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
+// ! @@@@@@@@@@@@@@@@@@@@@@[  landing start  ]@@@@@@@@@@@@@@@@@@@@@@
 

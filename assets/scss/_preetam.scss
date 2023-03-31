@@ -3,11 +3,12 @@
     @include media-breakpoint(basic) {
         
         .topNavbar {
-            height: 89px;
+            height: 86px;
             & .logoBox {
                 & .logoAnchor {
                     & .logoImg {
-                        width: 207px;
+                        width: 149px;
+                        height: 86px;
                     }
                 }
             }
@@ -16,58 +17,67 @@
                     & .linkItem {
                         padding: 0 13px;
                         & .linkAnchor {
-                            font-family: 'Roboto';
-                            font-weight: 700;
-                            font-size: 15px;
-                            line-height: 18px;
-                            color: #3C3C3C;
+                            font-family: 'Poppins';
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #000000;
                             transition: 0.3s ease;
                             &:hover,
                             &.active {
-                                color: #E32333;
+                                color: #B5141D;;
                             }
                         }
                     }
                 }
             }
             & .btnBox {
-                & .partnerBtn {
-                    width: 105px;
-                    height: 33px;
-                    font-family: 'Roboto';
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 14px;
-                    color: #E32333;
-                    border: 1px solid #E32333;
+                & .loginBtn {
+                    width: 104px;
+                    height: 39px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #B4111A;
+                    border: 1px solid #B4111A;
+                    border-radius: 5px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     transition: 0.3s ease;
                     &:hover {
-                        background-color: #E32333;
+                        background-color: #B4111A;
                         color: #ffffff;
                     }
                 }
-                & .loginBtn {
-                    width: 105px;
-                    height: 33px;
-                    font-family: 'Roboto';
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 14px;
+                & .registerBtn {
+                    width: 127px;
+                    height: 39px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
                     color: #FFFFFF;
-                    background-color: #E32333;
-                    border: 1px solid #E32333;
+                    background-color: #B4111A;
+                    border: 1px solid #B4111A;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     transition: 0.3s ease;
-                    margin: 0 23px 0 17px;
+                    border-radius: 5px;
+                    margin: 0 0px 0 17px;
                     &:hover {
                         background-color: white;
-                        color: #E32333;
+                        color: #B4111A;
                     }
+                }
+                & .heartIcon {
+                    height: 25px;
+                    margin: 0 45px;
+                }
+                & .searchIcon {
+                    height: 25px;
                 }
             }
             & .mobMenuIcon {

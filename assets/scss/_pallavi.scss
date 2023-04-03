@@ -1,0 +1,429 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+    @include media-breakpoint(basic) {
+        .allPartnersFluid{
+            & .allpartnersContainers{
+                & .allPartnersHeading{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 80px;
+                    color: $black;
+                    text-align: center;
+                    padding-top: 84px;
+                }
+                & .inputBox{
+                    margin-bottom: 88px;
+                    position: relative;
+                    & .inputClass{
+                        width: 100%;
+                        height: 90px;
+                        box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.07);
+                        border-radius: 10px;
+                        border: none;
+                        padding: 32px 200px 32px 135px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #838383;
+                        &.colourClass{
+                            background-color: #F6F8F9;
+                        }
+                        &.ausInpBg{
+                            background-color: #FFFCFC;
+                        }
+                    }
+                    & .capMain{
+                        position: absolute;
+                        width: 22.87px;
+                        height: 20px;
+                        left: 48px;
+                        top: 33px;
+                        & img{
+                            height: 20px;
+                        }
+                    }
+                    & .searchMain{
+                        width: 77px;
+                        height: 80px;
+                        background: #B4111A;
+                        border: 1px solid #000000;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: 4px;
+                        top: 5px;
+                        & img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .partnersCardFluid{
+            & .partnersCardContainer{
+                & .paddingClass{
+                    background-color: #FFFFFF;
+                    box-shadow: 0px 1.57219px 22.7967px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+                    min-height: 222px;
+                    & .cardHeader{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15.7219px;
+                        line-height: 24px;
+                        color: #000000;
+                        padding: 18px 0 18px 18px;
+                    }
+                    & .headerArrow{
+                        width: 26px;
+                        height: 26px;
+                        margin: 18px 9px 18px 0;
+                        display: block;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    & .university{
+                        padding: 44px 38px 44px 38px;
+                        text-align: center;
+                        & img{
+                        max-height: 68px;
+                        max-width: 100%;
+                        }
+                    }
+                    & .btnPadding{
+                        padding: 0 18px 11px 18px;
+                        & .bottomBtn{
+                            background: #FFFFFF;
+                            border: 1px solid #DDDDDD;
+                            border-radius: 5px;
+                            border-color: #DDDDDD ;
+                            width: 100%;
+                            padding: 8px 51px;
+                            color: #B4111A;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {
+        
+        .allPartnersFluid{
+            & .allpartnersContainers{
+                & .allPartnersHeading{
+                }
+                & .inputBox{
+                    & .inputClass{
+                        height: 85px;
+                        &.colourClass{
+                        }
+                    }
+                    & .capMain{
+                        & img{
+                        }
+                    }
+                    & .searchMain{
+                        height: 77px;
+                        position: absolute;
+                        top: 4;
+                        & img{
+                        }
+                    }
+                }
+            }
+        }
+        .partnersCardFluid{
+            & .partnersCardContainer{
+                & .paddingClass{
+                    & .cardHeader{
+                        font-size: 14px;
+                        padding: 15px 0 15px 15px;
+                    }
+                    & .headerArrow{
+                        margin: 0;
+                        & img{
+                            width: 36px;
+                            height: 20px;
+                        }
+                    }
+                    & .university{
+                        padding: 34px 38px 34px 38px !important;
+                        & img{
+                        }
+                    }
+                    & .btnPadding{
+                        padding: 0 15px 11px 15px;
+                        & .bottomBtn{
+                            height: 39px;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        .allPartnersFluid{
+        & .allpartnersContainers{
+            & .allPartnersHeading{
+            }
+            & .inputBox{
+                margin-bottom: 70px;
+                & .inputClass{
+                    height: 65px;
+                    padding-left: 70px;
+                    &.colourClass{
+                    }
+                }
+                & .capMain{
+                    top:20px;
+                    left: 25px;
+                    & img{
+                    }
+                }
+                & .searchMain{
+                    width: 60px;
+                    height: 57px;
+                    position: absolute;
+                    top: 4px;
+                    & img{
+                    }
+                }
+            }
+        }
+    }
+    .partnersCardFluid{
+        & .partnersCardContainer{
+            & .paddingClass{
+                & .cardHeader{
+                    line-height: 23px;
+                    font-size: 14px;
+                }
+                & .headerArrow{
+                    & img{
+                    }
+                }
+                & .university{
+                    padding: 25px 20px 26px 20px !important;
+                    & img{
+                    }
+                }
+                & .btnPadding{
+                    & .bottomBtn{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    @include media-breakpoint-down(lg) {
+        .allPartnersFluid{
+            & .allpartnersContainers{
+                & .allPartnersHeading{
+                }
+                & .inputBox{
+                    & .inputClass{
+                        &.colourClass{
+                        }
+                    }
+                    & .capMain{
+                        & img{
+                        }
+                    }
+                    & .searchMain{
+                        & img{
+                        }
+                    }
+                }
+            }
+        }
+        .partnersCardFluid{
+            & .partnersCardContainer{
+                & .paddingClass{
+                    & .cardHeader{
+                    }
+                    & .headerArrow{
+                        & img{
+                        }
+                    }
+                    & .university{
+                        & img{
+                        }
+                    }
+                    & .btnPadding{
+                        & .bottomBtn{
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .allPartnersFluid{
+            & .allpartnersContainers{
+                & .allPartnersHeading{
+                }
+                & .inputBox{
+                    margin-bottom: 50px;
+                    & .inputClass{
+                        &.colourClass{
+                        }
+                    }
+                    & .capMain{
+                        & img{
+                        }
+                    }
+                    & .searchMain{
+                        & img{
+                        }
+                    }
+                }
+            }
+        }
+        .partnersCardFluid{
+            & .partnersCardContainer{
+                & .paddingClass{
+                    & .cardHeader{
+                        font-size: 13px;
+                    }
+                    & .headerArrow{
+                        & img{
+                            height: 15px;
+                        }
+                    }
+                    & .university{
+                            padding: 15px 10px 15px 10px !important;
+                        & img{
+                        }
+                    }
+                    & .btnPadding{
+                        & .bottomBtn{
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .allPartnersFluid{
+            & .allpartnersContainers{
+                & .allPartnersHeading{
+                    font-size: 35px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                }
+                & .inputBox{
+                    margin-bottom: 38px;
+                    & .inputClass{
+                        padding: 30px 118px 30px 60px;
+                        font-size: 11px;
+                        height: 35px !important;
+                        &.colourClass{
+                        }
+                    }
+                    & .capMain{
+                        & img{
+                        }
+                    }
+                    & .searchMain{
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 11px;
+                        & img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .partnersCardFluid{
+            & .partnersCardContainer{
+                & .paddingClass{
+                    & .cardHeader{
+                    }
+                    & .headerArrow{
+                        & img{
+                        }
+                    }
+                    & .university{
+                        & img{
+                        }
+                    }
+                    & .btnPadding{
+                        & .bottomBtn{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=example] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
+

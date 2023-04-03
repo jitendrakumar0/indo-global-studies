@@ -529,4 +529,338 @@ body .overflow-auto-hidden {
     width: 20px;
     height: 20px;
   }
+}
+.allPartnersFluid .allpartnersContainers .allPartnersHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 80px;
+  color: #000;
+  text-align: center;
+  padding-top: 84px;
+}
+.allPartnersFluid .allpartnersContainers .inputBox {
+  margin-bottom: 88px;
+  position: relative;
+}
+.allPartnersFluid .allpartnersContainers .inputBox .inputClass {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  border: none;
+  padding: 32px 200px 32px 135px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #838383;
+}
+.allPartnersFluid .allpartnersContainers .inputBox .inputClass.colourClass {
+  background-color: #F6F8F9;
+}
+.allPartnersFluid .allpartnersContainers .inputBox .inputClass.ausInpBg {
+  background-color: #FFFCFC;
+}
+.allPartnersFluid .allpartnersContainers .inputBox .capMain {
+  position: absolute;
+  width: 22.87px;
+  height: 20px;
+  left: 48px;
+  top: 33px;
+}
+.allPartnersFluid .allpartnersContainers .inputBox .capMain img {
+  height: 20px;
+}
+.allPartnersFluid .allpartnersContainers .inputBox .searchMain {
+  width: 77px;
+  height: 80px;
+  background: #B4111A;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+.allPartnersFluid .allpartnersContainers .inputBox .searchMain img {
+  width: 25px;
+  height: 25px;
+}
+
+.partnersCardFluid .partnersCardContainer .paddingClass {
+  background-color: #FFFFFF;
+  box-shadow: 0px 1.57219px 22.7967px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-height: 222px;
+  flex-direction: column;
+}
+.partnersCardFluid .partnersCardContainer .paddingClass .cardHeader {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.7219px;
+  line-height: 24px;
+  color: #000000;
+  padding: 18px 0 18px 18px;
+}
+.partnersCardFluid .partnersCardContainer .paddingClass .headerArrow {
+  width: 26px;
+  height: 26px;
+  margin: 18px 9px 18px 0;
+  display: block;
+}
+.partnersCardFluid .partnersCardContainer .paddingClass .headerArrow img {
+  width: 100%;
+  height: 100%;
+}
+.partnersCardFluid .partnersCardContainer .paddingClass .university {
+  padding: 44px 38px 44px 38px;
+  text-align: center;
+}
+.partnersCardFluid .partnersCardContainer .paddingClass .university img {
+  max-height: 68px;
+  max-width: 100%;
+}
+.partnersCardFluid .partnersCardContainer .paddingClass .btnPadding {
+  padding: 0 18px 11px 18px;
+}
+.partnersCardFluid .partnersCardContainer .paddingClass .btnPadding .bottomBtn {
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  border-color: #DDDDDD;
+  width: 100%;
+  padding: 8px 51px;
+  color: #B4111A;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox {
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid #E3E3E3;
+  border-radius: 20px;
+  padding: 44px 45px;
+  margin-top: 55px;
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpMainHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: black;
+  margin-bottom: 36px;
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox {
+  background: rgba(180, 17, 26, 0.03);
+  border-radius: 20px;
+  padding: 24px 40px;
+  margin-bottom: 25px;
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox .noteTxt {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: rgba(180, 17, 26, 0.6);
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpFormInp {
+  background: rgba(217, 217, 217, 0.07);
+  border: 1px solid #DFDFDF;
+  border-radius: 6px;
+  height: 74px;
+  padding: 24px 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9B9B9B;
+  margin-bottom: 14px;
+  box-shadow: none;
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpBtn {
+  background: #B20E19;
+  border: 1px solid #B20E19;
+  border-radius: 6px;
+  height: 74px;
+  border: 1px solid #B20E19;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  width: 100%;
+  margin-top: 11px;
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpBtn:hover {
+  background-color: white;
+  border-color: #B20E19;
+  color: #B20E19;
+}
+
+@media (max-width: 1399.98px) {
+  .allPartnersFluid .allpartnersContainers .inputBox .inputClass {
+    height: 85px;
+  }
+  .allPartnersFluid .allpartnersContainers .inputBox .searchMain {
+    height: 77px;
+    position: absolute;
+    top: 4;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .cardHeader {
+    font-size: 14px;
+    padding: 15px 0 15px 15px;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .headerArrow {
+    margin: 0;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .headerArrow img {
+    width: 36px;
+    height: 20px;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .university {
+    padding: 34px 38px 34px 38px !important;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .btnPadding {
+    padding: 0 15px 11px 15px;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .btnPadding .bottomBtn {
+    height: 39px;
+    padding: 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .allPartnersFluid .allpartnersContainers .inputBox {
+    margin-bottom: 70px;
+  }
+  .allPartnersFluid .allpartnersContainers .inputBox .inputClass {
+    height: 65px;
+    padding-left: 70px;
+  }
+  .allPartnersFluid .allpartnersContainers .inputBox .capMain {
+    top: 20px;
+    left: 25px;
+  }
+  .allPartnersFluid .allpartnersContainers .inputBox .searchMain {
+    width: 60px;
+    height: 57px;
+    position: absolute;
+    top: 4px;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .cardHeader {
+    line-height: 23px;
+    font-size: 14px;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .university {
+    padding: 25px 20px 26px 20px !important;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .btnPadding .bottomBtn {
+    font-size: 13px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpMainHead {
+    font-size: 25px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox .noteTxt {
+    font-size: 15px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpFormInp {
+    height: 56px;
+    font-size: 15px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpBtn {
+    height: 56px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .allPartnersFluid .allpartnersContainers .inputBox {
+    margin-bottom: 50px;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .cardHeader {
+    font-size: 13px;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .headerArrow img {
+    height: 15px;
+  }
+  .partnersCardFluid .partnersCardContainer .paddingClass .university {
+    padding: 15px 10px 15px 10px !important;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox {
+    padding: 30px 30px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpMainHead {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox {
+    padding: 20px 24px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox .noteTxt {
+    font-size: 14px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpFormInp {
+    height: 40px;
+    font-size: 13px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpBtn {
+    height: 50px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .allPartnersFluid .allpartnersContainers .allPartnersHeading {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .allPartnersFluid .allpartnersContainers .inputBox {
+    margin-bottom: 38px;
+  }
+  .allPartnersFluid .allpartnersContainers .inputBox .inputClass {
+    padding: 30px 118px 30px 60px;
+    font-size: 11px;
+    height: 35px !important;
+  }
+  .allPartnersFluid .allpartnersContainers .inputBox .searchMain {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 11px;
+  }
+  .allPartnersFluid .allpartnersContainers .inputBox .searchMain img {
+    width: 20px;
+    height: 20px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox {
+    padding: 12px 12px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpMainHead {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox {
+    padding: 16px 16px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox .noteTxt {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpFormInp {
+    font-size: 12px;
+    padding: 24px 14px;
+  }
 }/*# sourceMappingURL=style.min.css.map */

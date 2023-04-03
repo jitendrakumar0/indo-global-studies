@@ -1,0 +1,321 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=example] {
+    @include media-breakpoint(basic) {
+        
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=example] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ! #################### [ Global Scss ] ########################
+@include media-breakpoint(basic) {
+    .platformsection {
+        padding-top: 70px;
+        padding-bottom: 96px;
+        & .innerSection {
+            & .platformHeading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 60px;
+                color: #1D1D1D;
+                margin-bottom: 20px;
+                & span {
+                    color: #B4111A;
+                }
+            }
+            & .navTabs {
+                & .nav-pills {
+                    background: #FFF1F1;
+                    border: 1px solid #EEDCDC;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
+                    border-radius: 5px;
+                    & .nav-item {
+                        width: 33.33%;
+                        height: 48px;
+                        position: relative;
+                        &:focus-visible{
+                            outline: none !important;
+                        }
+                        & .nav-link  {
+                            position: absolute;
+                            inset: 0;
+                            margin: auto;
+                            text-transform: uppercase;
+                            color: #1B1B1B;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            border: 1px solid transparent !important;
+                            box-shadow: none;
+                            &.active {
+                                background: #B4111A;
+                                border: 1px solid #EEDCDC !important;
+                                border-radius: 5px;
+                                color: #FFFFFF;
+                            }
+                            &:focus-visible{
+                                outline: none !important;
+                                border: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            & .platFormContantSide {
+                padding-top: 30px;
+                & .platformImg {
+                    max-width: 400px;
+                }
+                & .studentHeading {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 38px;
+                    /* identical to box height */
+                    color: #000000;
+                    margin-bottom: 10px;
+                }
+                & .content {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    /* or 167% */
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                    margin-bottom: 30px;
+                }
+                & .signUpBtn {
+                    & a {
+                        background: #B4111A;
+                        border: 2px solid #B4111A;
+                        border-radius: 5px;
+                        padding: 15px 61px 15px 36px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #FFFFFF;
+                        transition: all ease-in-out 0.3s;
+                        &:hover{
+                            background: #ffffff;
+                            color: #B4111A;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .platformsection {
+        & .innerSection {
+            & .platformHeading {
+                font-size: 35px;
+                line-height: 45px;
+            }
+            & .navTabs {
+                & .nav-pills {
+                    & .nav-item {
+                        & .nav-link  {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            
+            & .platFormContantSide {
+                & .platformImg {
+                }
+                & .studentHeading {
+                }
+                & .content {
+                }
+                & .signUpBtn {
+                    & a {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .platformsection {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        & .innerSection {
+            & .platformHeading {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
+            & .navTabs {
+                & .nav-pills {
+                    & .nav-item {
+                        height: 40px;
+                        & .nav-link  {
+                            font-size: 12px;
+                            line-height: 16px;
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            
+            & .platFormContantSide {
+                // padding-top: 30px;
+                & .platformImg {
+                    max-width: 320px;
+                }
+                & .studentHeading {
+                    font-size: 22px;
+                    line-height: 35px;
+                    margin-bottom: 8px;
+                }
+                & .content {
+                    font-size: 16px;
+                    line-height: 25px;
+                    // margin-bottom: 30px;
+                }
+                & .signUpBtn {
+                    & a {
+                        padding: 10px 51px 10px 26px;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .platformsection {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        & .innerSection {
+            & .platformHeading {
+                font-size: 25px;
+                line-height: 30px;
+            }
+            & .navTabs {
+                & .nav-pills {
+                    white-space: nowrap;
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    & .nav-item {
+                        min-width: 180px !important;
+                        height: 35px;
+                        & .nav-link  {
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+            
+            & .platFormContantSide {
+                padding-top: 20px;
+                & .platformImg {
+                    max-width: 280px;
+                }
+                & .studentHeading {
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+                & .content {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                & .signUpBtn {
+                    & a {
+                        padding: 8px 40px 8px 20px;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+} 

@@ -1,75 +1,423 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  landing start  ]@@@@@@@@@@@@@@@@@@@@@@
 [data-page-name=landing] {
     @include media-breakpoint(basic) {
-        
         & .heroSection {
-            & .carousel {
-                & .carousel-inner {
-                    & .carousel-item {
-                        aspect-ratio: 1440/ calc(720 - 89);
-                        background-image: var(--bg);
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: cover;
-                        & .carousel-item-content {
-                            height: 100%;
-                            & .carousel-item-content-inner {
-                                height: 100%;
-                                align-items: center;
-                                & .carousel-item-content-heading {
-                                    font-family: 'Gilroy-Bold';
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    font-size: 68px;
-                                    line-height: 73px;
+            // aspect-ratio: 1920/ calc(677 - 86);
+            min-height: calc(100% - 87px - 158px);
+            background-image: var(--bg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            & .heroSectionInner {
+                padding-top: 118px;
+                padding-bottom: 118px;
+                & .heroSectionHeading {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 40px;
+                    /* identical to box height, or 143% */
 
-                                    color: $white;
+                    display: flex;
+                    align-items: center;
+
+                    color: $black;
+                    gap: 10px;
+                    padding-bottom: 20px;
+                    & span {
+                        color: $theme1;
+                    }
+                }
+                & .heroSectionSearchBox {
+                    background: #FFFCFC;
+                    box-shadow: 0px 9.34114px 14.4363px rgba(0, 0, 0, 0.07);
+                    border-radius: 8.49195px;
+                    padding: 17px 0px;
+                    max-width: 600px;
+                    margin-bottom: 20px;
+                    & .heroSectionSearchSelect {
+                        &:first-child {
+                            border-right: 0.849195px solid #D3D2D2;
+                        }
+                        & select {
+                            
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single {
+                            border: none;
+                            outline: none;
+                            box-shadow: none !important;
+                            background-color: transparent !important;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15.2855px;
+                            padding: 0.825rem 0.75rem 0.425rem 0.75rem;
+                            color: #838383;
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single>.select2-selection__rendered {
+                            &::before {
+                                content: '';
+                                background-image: var(--bg);
+                                width: 19.42px;
+                                height: 19.42px;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                display: inline-block;
+                            }
+                            display: flex;
+                            gap: 10px;
+                            font-size: 15.2855px;
+                            color: #838383;
+                        }
+                    }
+                }
+                & .heroSectionSearchInput {
+                    background: #FFFCFC;
+                    box-shadow: 0px 9.34114px 14.4363px rgba(0, 0, 0, 0.07);
+                    border-radius: 8.49195px;
+                    padding: 7px 7px;
+                    max-width: 600px;
+                    position: relative;
+                    display: flex;
+                    gap: 10px;
+                    margin-bottom: 27px;
+                    & input {
+                        width: 100%;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15.2855px;
+                        line-height: 23px;
+                        /* identical to box height */
+
+                        display: flex;
+                        align-items: center;
+
+                        color: #838383;
+                        border: none !important;
+                        outline: none !important;
+                        box-shadow: none !important;
+                        padding-left: 25px;
+                        background-color: transparent;
+                    }
+                    & .searchBtn {
+                        width: 68.78px;
+                        height: 67.94px;
+                        min-width: 68.78px;
+                        min-height: 67.94px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        background: $theme1;
+                        border: 0.849195px solid $black;
+                        border-radius: 8.49195px;
+                        transition: .3s all;
+                        & img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                        &:hover {
+                            background: darken($theme1, 5);
+                        }
+                    }
+                }
+                & .heroSectionHeading2 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 38px;
+                    line-height: 46px;
+                    /* or 121% */
+                    
+                    display: flex;
+                    align-items: center;
+                    text-transform: capitalize;
+                    
+                    color: #494949;
+                    padding-bottom: 25px;
+                }
+                & .quickTags {
+                    & .quickTagsInner {
+                        & .quickTag {
+                            transition: .3s all;
+                            & a {
+                                background: #FFFFFF;
+                                border-radius: 5px;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 27px;
+                                /* identical to box height */
+
+                                display: flex;
+                                align-items: center;
+
+                                color: $theme1;
+                                padding: 16px 32px;
+                            }
+                            &.active {
+                                & a {
+                                    background-color: $theme1;
+                                    color: #FFFFFF;
                                 }
-                                & .chooseProgramBtn {
-                                    margin-top: 65px;
-                                    & a {
-                                        font-family: 'Gilroy-Bold';
+                            }
+                            &:hover {
+                                transform: scale(0.95);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .talkToExpert {
+            background: linear-gradient(270deg, $theme2 48.13%, #F8EFF0 48.15%);
+            & .talkToExpertInner {
+                & .talkToExpertInner2 {
+                    & .talkToExpertHeading {
+                        background-color: #F8EFF0;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 34.2687px;
+                        line-height: 51px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        color: #464646;
+                        padding: 54px 10px;
+                        & span {
+                            color: $theme1;
+                        }
+                    }
+                    & .talkToExpertFor {
+                        background-color: $theme1;
+                        padding: 54px 10px;
+                        & img {
+                            width: 34.49px;
+                            height: 30.16px;
+                            min-width: 34.49px;
+                            min-height: 30.16px;
+                            padding: 0px;
+                        }
+                        & span {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 24.1279px;
+                            line-height: 36px;
+                            display: flex;
+                            align-items: center;
+                            
+                            color: #FFFFFF;
+                        }
+                        & a {
+                            background: #AF3E46;
+                            border-radius: 6.03198px;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 19.3023px;
+                            line-height: 29px;
+                            padding: 10.5px 17px 8.5px 17px;
+                            /* identical to box height */
+
+                            display: flex;
+                            align-items: center;
+
+                            color: #FFFFFF;
+                            transition: .3s all;
+                        }
+                        &.business {
+                            background-color: $theme2;
+                        }
+                        &:hover a {
+                            background: lighten(#AF3E46, 10);
+                        }
+                    }
+                }
+            }
+        }
+        & .popularSeachers {
+            & .popularSeachersInner {
+                & .popularSeachersHeading {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 54px;
+                    /* identical to box height */
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    color: #1D1D1D;
+                    margin-bottom: 36px;
+                }
+                & .popularSeachersItems {
+                    & .popularSeachersItem {
+                        background: #FFFFFF;
+                        border: 1px solid #D5D5D5;
+                        border-radius: 5px;
+                        & .popularSeachersItemInner {
+                            padding: 32px 44px;
+                            & .itemImg {
+                                & img {
+                                    max-width: 150px;
+                                    max-height: 47px;
+                                    object-fit: contain;
+                                    object-position: center;
+                                }
+                            }
+                            & .itemTitleWithDetails {
+                                & .itemTitleWithDetailsInner {
+                                    & .itemTitle {
+                                        font-family: 'Poppins';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 20px;
+                                        line-height: 30px;
+                                        /* identical to box height */
+
+                                        display: flex;
+                                        align-items: center;
+
+                                        color: #000000;
+                                    }
+                                    & .itemTitleBelowDetails {
+                                        & .itemTitleBelowDetailsInner {
+                                            & .itemUniversity {
+                                                font-family: 'Poppins';
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                /* identical to box height */
+                                                
+                                                display: flex;
+                                                align-items: center;
+                                                
+                                                color: #B4111A;
+                                            }
+                                            & .itemType {
+                                                & span {
+                                                    font-family: 'Poppins';
+                                                    font-style: normal;
+                                                    font-weight: 500;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    /* identical to box height */
+
+                                                    display: flex;
+                                                    align-items: center;
+
+                                                    color: #7E7E7E;
+                                                    & img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .itemFeeDuration {
+                                & .itemFeeDurationInner {
+                                    & .itemCourseFee {
+                                        & .itemCourseFeeImg {
+                                            & img {
+
+                                            }
+                                        }
+                                        & .itemCourseFeeLabel {
+                                            font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            /* identical to box height */
+                                            
+                                            display: flex;
+                                            align-items: center;
+                                            
+                                            color: #131313;
+                                        }
+                                        & .itemCourseFeePrice {
+                                            font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            /* identical to box height */
+                                            
+                                            display: flex;
+                                            align-items: center;
+                                            
+                                            color: #3E3E3E;
+                                        }
+                                    }
+                                    & .itemCourseDuration {
+                                        & .itemCourseDurationImg {
+                                            & img {
+
+                                            }
+                                        }
+                                    }
+                                    & .itemCourseDurationLabel {
+                                        font-family: 'Poppins';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        
+                                        color: #131313;
+                                    }
+                                    & .itemCourseDurationTime {
+                                        font-family: 'Poppins';
                                         font-style: normal;
                                         font-weight: 400;
-                                        font-size: 18px;
-                                        line-height: 22px;
-
-                                        color: $white;
-                                        background: $theme1;
-                                        border-radius: 5px;
-                                        width: 216px;
-                                        height: 56px;
-                                        display: inline-flex;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
                                         align-items: center;
-                                        justify-content: center;
-                                        transition: .3s all;
-                                        border: 2px solid $theme1;
-                                        &:hover {
-                                            color: $theme1;
-                                            background: $white;
-                                            border: 2px solid $theme1;
+                                        
+                                        color: #3E3E3E;
+                                    }
+                                }
+                            }
+                            & .itemBtns {
+                                & .itemBtnsInner {
+                                    & .itemBtn {
+                                        & a {
+                                            background: #FFFFFF;
+                                            border: 1px solid #C1C1C1;
+                                            border-radius: 5px;
+                                            padding: 8px 30px;
+                                            font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            /* identical to box height */
+
+
+                                            color: #B4111A;
                                         }
                                     }
                                 }
                             }
                         }
-                        &.active {
-
-                        }
-                    }
-                }
-                & [class*=carousel-control-] {
-                    & .carouselBtn {
-                        & img {
-                            width: 48px;
-                            height: 48px;
-                        }
-                    }
-                    &.carousel-control-prev {
-    
-                    }
-                    &.carousel-control-next {
-                        
                     }
                 }
             }
@@ -88,15 +436,410 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        & .heroSection {
+            & .heroSectionInner {
+                & .heroSectionHeading {
+                    & span {
+                    }
+                }
+                & .heroSectionSearchBox {
+                    & .heroSectionSearchSelect {
+                        &:first-child {
+                        }
+                        & select {
+                            
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single {
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single>.select2-selection__rendered {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+                & .heroSectionSearchInput {
+                    & input {
+                    }
+                    & .searchBtn {
+                        & img {
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                & .heroSectionHeading2 {
+                }
+                & .quickTags {
+                    & .quickTagsInner {
+                        & .quickTag {
+                            & a {
+                            }
+                            &.active {
+                                & a {
+                                }
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .talkToExpert {
+            & .talkToExpertInner {
+                & .talkToExpertInner2 {
+                    & .talkToExpertHeading {
+                        font-size: 28px;
+                        padding: 40px 10px;
+                        & span {
+                        }
+                    }
+                    & .talkToExpertFor {
+                        padding: 40px 10px;
+                        & img {    
+                            width: 30.49px;
+                            height: 27.16px;
+                            min-width: 30.49px;
+                            min-height: 27.16px;
+                        }
+                        & span {
+                            font-size: 20px;
+                        }
+                        & a {
+                            font-size: 16px;
+                        }
+                        &.business {
+                        }
+                        &:hover a {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        & .heroSection {
+            & .heroSectionInner {
+                & .heroSectionHeading {
+                    & span {
+                    }
+                }
+                & .heroSectionSearchBox {
+                    & .heroSectionSearchSelect {
+                        &:first-child {
+                        }
+                        & select {
+                            
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single {
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single>.select2-selection__rendered {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+                & .heroSectionSearchInput {
+                    & input {
+                    }
+                    & .searchBtn {
+                        & img {
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                & .heroSectionHeading2 {
+                }
+                & .quickTags {
+                    & .quickTagsInner {
+                        & .quickTag {
+                            & a {
+                            }
+                            &.active {
+                                & a {
+                                }
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .talkToExpert {
+            & .talkToExpertInner {
+                & .talkToExpertInner2 {
+                    & .talkToExpertHeading {
+                        font-size: 24px;
+                        padding: 20px 10px;
+                        & span {
+                        }
+                    }
+                    & .talkToExpertFor {
+                        padding: 20px 10px;
+                        & img {
+                        }
+                        & span {
+                        }
+                        & a {
+                        }
+                        &.business {
+                        }
+                        &:hover a {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        & .heroSection {
+            & .heroSectionInner {
+                & .heroSectionHeading {
+                    & span {
+                    }
+                }
+                & .heroSectionSearchBox {
+                    & .heroSectionSearchSelect {
+                        &:first-child {
+                        }
+                        & select {
+                            
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single {
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single>.select2-selection__rendered {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+                & .heroSectionSearchInput {
+                    & input {
+                    }
+                    & .searchBtn {
+                        & img {
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                & .heroSectionHeading2 {
+                }
+                & .quickTags {
+                    & .quickTagsInner {
+                        & .quickTag {
+                            & a {
+                            }
+                            &.active {
+                                & a {
+                                }
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .talkToExpert {
+            background: none;
+            & .talkToExpertInner {
+                & .talkToExpertInner2 {
+                    & .talkToExpertHeading {
+                        background: none;
+                        & span {
+                        }
+                    }
+                    & .talkToExpertFor {
+                        & img {
+                        }
+                        & span {
+                        }
+                        & a {
+                        }
+                        &.business {
+                        }
+                        &:hover a {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        & .heroSection {
+            background-image: var(--m_bg);
+            background-position: center right !important;
+            & .heroSectionInner {
+                padding-top: 70px;
+                padding-bottom: 70px;
+                & .heroSectionHeading {
+                    font-size: 20px;
+                    & span {
+                    }
+                }
+                & .heroSectionSearchBox {
+                    padding: 6px 0px;
+                    & .heroSectionSearchSelect {
+                        &:first-child {
+                        }
+                        & select {
+                            
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single {
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single>.select2-selection__rendered {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+                & .heroSectionSearchInput {
+                    & input {
+                        padding-top: 7px;
+                    }
+                    & .searchBtn {
+                        width: 45px;
+                        height: 45px;
+                        min-width: 45px;
+                        min-height: 45px;
+                        & img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                & .heroSectionHeading2 {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                & .quickTags {
+                    & .quickTagsInner {
+                        & .quickTag {
+                            & a {
+                                font-size: 13px;
+                                line-height: 15px;
+                                padding: 13px 17px;
+                            }
+                            &.active {
+                                & a {
+                                }
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .talkToExpert {
+            & .talkToExpertInner {
+                & .talkToExpertInner2 {
+                    & .talkToExpertHeading {
+                        padding: 15px 5px 0px 5px;
+                        & span {
+                        }
+                    }
+                    & .talkToExpertFor {
+                        border-radius: 15px;
+                        & img {
+                        }
+                        & span {
+                        }
+                        & a {
+                        }
+                        &.business {
+                            border-left: 1px dashed $white;
+                        }
+                        &:hover a {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        & .heroSection {
+            & .heroSectionInner {
+                & .heroSectionHeading {
+                    & span {
+                    }
+                }
+                & .heroSectionSearchBox {
+                    & .heroSectionSearchSelect {
+                        &:first-child {
+                        }
+                        & select {
+                            
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single {
+                        }
+                        & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single>.select2-selection__rendered {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+                & .heroSectionSearchInput {
+                    & input {
+                    }
+                    & .searchBtn {
+                        & img {
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+                & .heroSectionHeading2 {
+                }
+                & .quickTags {
+                    & .quickTagsInner {
+                        & .quickTag {
+                            & a {
+                            }
+                            &.active {
+                                & a {
+                                }
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .talkToExpert {
+            & .talkToExpertInner {
+                & .talkToExpertInner2 {
+                    & .talkToExpertHeading {
+                        & span {
+                        }
+                    }
+                    & .talkToExpertFor {
+                        & img {
+                        }
+                        & span {
+                        }
+                        & a {
+                        }
+                        &.business {
+                        }
+                        &:hover a {
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 [data-bs-theme=dark] {

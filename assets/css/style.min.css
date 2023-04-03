@@ -326,7 +326,7 @@ body .overflow-auto-hidden {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 4px;
+  right: 8px;
   top: 5px;
 }
 .allPartnersFluid .allpartnersContainers .inputBox .searchMain img {
@@ -339,6 +339,7 @@ body .overflow-auto-hidden {
   box-shadow: 0px 1.57219px 22.7967px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   min-height: 222px;
+  flex-direction: column;
 }
 .partnersCardFluid .partnersCardContainer .paddingClass .cardHeader {
   font-family: "Poppins";
@@ -383,6 +384,44 @@ body .overflow-auto-hidden {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox {
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid #E3E3E3;
+  border-radius: 20px;
+  padding: 44px 65px;
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpMainHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: black;
+  margin-bottom: 36px;
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox {
+  background: rgba(180, 17, 26, 0.03);
+  border-radius: 20px;
+  padding: 24px 40px;
+  margin-bottom: 25px;
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .noteBox .noteTxt {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: rgba(180, 17, 26, 0.6);
+}
+.agentSignUpOnefluid .agentSingnUpContainer .agentSignUpBox .agentSignUpFormInp {
+  background: rgba(217, 217, 217, 0.07);
+  border: 1px solid #DFDFDF;
+  border-radius: 6px;
+  height: 74px;
 }
 
 @media (max-width: 1399.98px) {

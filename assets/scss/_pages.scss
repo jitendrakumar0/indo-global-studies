@@ -243,7 +243,10 @@
             }
         }
         & .popularSeachers {
+            background-color: #FCFCFC;
             & .popularSeachersInner {
+                padding-top: 57px;
+                padding-bottom: 57px;
                 & .popularSeachersHeading {
                     font-family: 'Poppins';
                     font-style: normal;
@@ -260,12 +263,22 @@
                     margin-bottom: 36px;
                 }
                 & .popularSeachersItems {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        height: 200px;
+                        width: 100%;
+                        position: absolute;
+                        inset: auto 0px 0px 0px;
+                        z-index: 1;
+                        background: linear-gradient(0deg, #fcfcfc, transparent);
+                    }
                     & .popularSeachersItem {
-                        background: #FFFFFF;
-                        border: 1px solid #D5D5D5;
-                        border-radius: 5px;
                         & .popularSeachersItemInner {
-                            padding: 32px 44px;
+                            background: #FFFFFF;
+                            border: 1px solid #D5D5D5;
+                            border-radius: 5px;
+                            padding: 32px 24px;
                             & .itemImg {
                                 & img {
                                     max-width: 150px;
@@ -288,6 +301,7 @@
                                         align-items: center;
 
                                         color: #000000;
+                                        padding-bottom: 5px;
                                     }
                                     & .itemTitleBelowDetails {
                                         & .itemTitleBelowDetailsInner {
@@ -305,6 +319,7 @@
                                                 color: #B4111A;
                                             }
                                             & .itemType {
+                                                border-left: 1px solid #d5d5d5;
                                                 & span {
                                                     font-family: 'Poppins';
                                                     font-style: normal;
@@ -318,7 +333,8 @@
 
                                                     color: #7E7E7E;
                                                     & img {
-
+                                                        margin-top: -6px;
+                                                        margin-right: 5px;
                                                     }
                                                 }
                                             }
@@ -327,11 +343,18 @@
                                 }
                             }
                             & .itemFeeDuration {
+                                padding-right: 0;
+                                padding-left: 25px;
+                                border-width: 0px 1px;
+                                border-style: solid;
+                                border-color: #cfcfcf;
                                 & .itemFeeDurationInner {
                                     & .itemCourseFee {
+                                        padding-bottom: 16px;
                                         & .itemCourseFeeImg {
                                             & img {
-
+                                                margin-top: -6px;
+                                                margin-right: 5px;
                                             }
                                         }
                                         & .itemCourseFeeLabel {
@@ -364,7 +387,12 @@
                                     & .itemCourseDuration {
                                         & .itemCourseDurationImg {
                                             & img {
-
+                                                width: 16px;
+                                                height: 16px;
+                                                object-fit: contain;
+                                                object-position: center;
+                                                margin-top: -6px;
+                                                margin-right: 5px;
                                             }
                                         }
                                     }
@@ -397,11 +425,12 @@
                                 }
                             }
                             & .itemBtns {
+                                padding-left: 30px;
                                 & .itemBtnsInner {
                                     & .itemBtn {
                                         & a {
                                             background: #FFFFFF;
-                                            border: 1px solid #C1C1C1;
+                                            border: 2px solid #C1C1C1;
                                             border-radius: 5px;
                                             padding: 8px 30px;
                                             font-family: 'Poppins';
@@ -410,13 +439,178 @@
                                             font-size: 16px;
                                             line-height: 24px;
                                             /* identical to box height */
+                                            display: flex;
+                                            transition: .3s all;
 
 
                                             color: #B4111A;
+                                            &:hover {
+                                                border-color: #B4111A;
+                                            }
                                         }
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                & .popularSeachersViewAll {
+                    text-align: center;
+                    & a {
+                        background: #B4111A;
+                        border-radius: 5px;
+                        padding: 15px 37px;
+                        display: inline-block;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 27px;
+                        border: 2px solid #B4111A;
+                        transition: .3s all;
+
+                        color: #FFFFFF;
+                        &:hover {
+                            background: $white;
+                            color: #B4111A;
+                        }
+                    }
+                }
+            }
+        }
+        & .howWeHelpSection {
+            padding-top: 79px;
+            padding-bottom: 79px;
+            & .howWeHelpInner {
+                & .howWeHelpHeading {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 60px;
+                    /* identical to box height */
+                    text-align: center;
+                    
+                    color: #1D1D1D;
+                    margin-bottom: 30px;
+                }
+                & .howWeHelpVideo {
+                    position: relative;
+                    z-index: 1;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 102px;
+                        height: 95px;
+                        background: url(../img/svg/dotsRed.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        inset: -22px auto auto -11px;
+                        z-index: -1;
+                        transition: .3s all;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 102px;
+                        height: 95px;
+                        background: url(../img/svg/dotsRed.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        inset: auto -11px -22px auto;
+                        z-index: -1;
+                        transition: .3s all;
+                    }
+                    &:hover {
+                        &::before {
+                            inset: -11px auto auto -22px;
+                        }
+                        &::after {
+                            inset: auto -22px -11px auto;
+                        }
+                    }
+                    & .plyr {
+
+                        & .plyr__controls {
+                            border-radius: 0px 0px 15px 15px;
+                            overflow: hidden;
+                            & .plyr__progress__container {
+                                & .plyr__progress {
+                                    & input[type="range" i]::-webkit-slider-runnable-track {
+                                        color: $theme1;
+                                    }
+                                }
+                            }
+                            & .plyr__volume {
+                                & button {
+                                    &:hover {
+                                        background-color: $theme1;
+                                    }
+                                }
+                                & input[type="range" i]::-webkit-slider-runnable-track {
+                                    color: $theme1;
+                                }
+                            }
+                            & button.plyr__controls__item {
+                                &:hover {
+                                    background-color: $theme1;
+                                }
+                            }
+                            & .plyr__menu {
+                                & button {
+                                    &.plyr__control[aria-expanded=true] {
+                                        background-color: $theme1;
+                                    }
+                                    &:hover {
+                                        background-color: $theme1;
+                                    }
+                                }
+                            }
+                        }
+                        & .plyr__video-wrapper {
+                            aspect-ratio: 1214/460 !important;
+                            border-radius: 15px;
+                            overflow: hidden;
+                        }
+                        & .plyr__control--overlaid {
+                            background: url(../img/svg/playRed.svg);
+                            width: 119px;
+                            height: 119px;
+                            background-size: contain;
+                            background-position: center;
+                            & * {
+                                display: none;
+                            }
+                        }
+                        &.plyr--full-ui.plyr--video.plyr--youtube.plyr--fullscreen-enabled.plyr--paused.plyr--stopped.plyr__poster-enabled {
+                            & .plyr__controls {
+                                display: none !important;
+                            }
+                        }
+                    }
+                }
+                & .howWeHelpPartnerWithUs {
+                    margin-top: 40px;
+                    text-align: center;
+                    & a {
+                        background: #B4111A;
+                        border-radius: 5px;
+                        padding: 15px 33px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 27px;
+                        /* identical to box height */
+                        border: 2px solid #B4111A;
+                        transition: .3s all;
+
+                        color: #FFFFFF;
+                        &:hover {
+                            background: $white;
+                            color: #B4111A;
                         }
                     }
                 }
@@ -517,6 +711,122 @@
                 }
             }
         }
+        & .popularSeachers {
+            & .popularSeachersInner {
+                & .popularSeachersHeading {
+                    font-size: 28px;
+                }
+                & .popularSeachersItems {
+                    & .popularSeachersItem {
+                        & .popularSeachersItemInner {
+                            & .itemImg {
+                                & img {
+                                }
+                            }
+                            & .itemTitleWithDetails {
+                                & .itemTitleWithDetailsInner {
+                                    & .itemTitle {
+                                        font-size: 17px;
+                                    }
+                                    & .itemTitleBelowDetails {
+                                        & .itemTitleBelowDetailsInner {
+                                            & .itemUniversity {
+                                                font-size: 13px;
+                                            }
+                                            & .itemType {
+                                                & span {
+                                                    font-size: 13px;
+                                                    & img {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .itemFeeDuration {
+                                & .itemFeeDurationInner {
+                                    & .itemCourseFee {
+                                        & .itemCourseFeeImg {
+                                            & img {
+                                                width: 17px;
+                                                height: 17px;
+                                            }
+                                        }
+                                        & .itemCourseFeeLabel {
+                                            font-size: 14px;
+                                        }
+                                        & .itemCourseFeePrice {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    & .itemCourseDuration {
+                                        & .itemCourseDurationImg {
+                                            & img {
+                                                width: 17px;
+                                                height: 17px;
+                                            }
+                                        }
+                                    }
+                                    & .itemCourseDurationLabel {
+                                        font-size: 14px;
+                                    }
+                                    & .itemCourseDurationTime {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            & .itemBtns {
+                                & .itemBtnsInner {
+                                    & .itemBtn {
+                                        & a {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .howWeHelpSection {
+            & .howWeHelpInner {
+                & .howWeHelpHeading {
+                    font-size: 28px;
+                }
+                & .howWeHelpVideo {
+                    &::before {
+                        width: 70px;
+                        height: 70px;
+                        inset: -17px auto auto -4px;
+                    }
+                    &::after {
+                        width: 70px;
+                        height: 70px;
+                        inset: auto -4px -17px auto;
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        &::after {
+                        }
+                    }
+                    & .plyr {
+                        & .plyr__control--overlaid {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                }
+                & .howWeHelpPartnerWithUs {
+                    & a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
@@ -594,6 +904,108 @@
                 }
             }
         }
+        & .popularSeachers {
+            & .popularSeachersInner {
+                & .popularSeachersHeading {
+                    font-size: 24px;
+                }
+                & .popularSeachersItems {
+                    & .popularSeachersItem {
+                        & .popularSeachersItemInner {
+                            padding: 22px 18px;
+                            & .itemImg {
+                                transform: translateY(50%);
+                                & img {
+                                }
+                            }
+                            & .itemTitleWithDetails {
+                                & .itemTitleWithDetailsInner {
+                                    & .itemTitle {
+                                    }
+                                    & .itemTitleBelowDetails {
+                                        & .itemTitleBelowDetailsInner {
+                                            & .itemUniversity {
+                                            }
+                                            & .itemType {
+                                                & span {
+                                                    & img {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .itemFeeDuration {
+                                border: none;
+                                padding-left: 0px;
+                                & .itemFeeDurationInner {
+                                    & .itemCourseFee {
+                                        padding-bottom: 0px;
+                                        & .itemCourseFeeImg {
+                                            & img {
+                                            }
+                                        }
+                                        & .itemCourseFeeLabel {
+                                        }
+                                        & .itemCourseFeePrice {
+                                        }
+                                    }
+                                    & .itemCourseDuration {
+                                        & .itemCourseDurationImg {
+                                            & img {
+                                            }
+                                        }
+                                    }
+                                    & .itemCourseDurationLabel {
+                                    }
+                                    & .itemCourseDurationTime {
+                                    }
+                                }
+                            }
+                            & .itemBtns {    
+                                transform: translateY(-75%);
+                                & .itemBtnsInner {
+                                    & .itemBtn {
+                                        & a {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .howWeHelpSection {
+            & .howWeHelpInner {
+                & .howWeHelpHeading {
+                    font-size: 24px;
+                }
+                & .howWeHelpVideo {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        &::after {
+                        }
+                    }
+                    & .plyr {
+                        & .plyr__control--overlaid {
+                        }
+                    }
+                }
+                & .howWeHelpPartnerWithUs {
+                    & a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
@@ -647,7 +1059,6 @@
             }
         }
         & .talkToExpert {
-            background: none;
             & .talkToExpertInner {
                 & .talkToExpertInner2 {
                     & .talkToExpertHeading {
@@ -665,6 +1076,110 @@
                         &.business {
                         }
                         &:hover a {
+                        }
+                    }
+                }
+            }
+        }
+        & .popularSeachers {
+            & .popularSeachersInner {
+                & .popularSeachersHeading {
+                }
+                & .popularSeachersItems {
+                    & .popularSeachersItem {
+                        & .popularSeachersItemInner {
+                            & .itemImg {
+                                padding-bottom: 20px;
+                                transform: translateY(0%);
+                                & img {
+                                }
+                            }
+                            & .itemTitleWithDetails {
+                                & .itemTitleWithDetailsInner {
+                                    & .itemTitle {
+                                        font-size: 15px;
+                                        line-height: unset;
+                                    }
+                                    & .itemTitleBelowDetails {
+                                        & .itemTitleBelowDetailsInner {
+                                            & .itemUniversity {
+                                            }
+                                            & .itemType {
+                                                border-left: none;
+                                                & span {
+                                                    & img {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .itemFeeDuration {
+                                padding-left: calc(var(--bs-gutter-x)*.5);
+                                & .itemFeeDurationInner {
+                                    & .itemCourseFee {
+                                        & .itemCourseFeeImg {
+                                            & img {
+                                            }
+                                        }
+                                        & .itemCourseFeeLabel {
+                                        }
+                                        & .itemCourseFeePrice {
+                                        }
+                                    }
+                                    & .itemCourseDuration {
+                                        & .itemCourseDurationImg {
+                                            & img {
+                                            }
+                                        }
+                                    }
+                                    & .itemCourseDurationLabel {
+                                    }
+                                    & .itemCourseDurationTime {
+                                    }
+                                }
+                            }
+                            & .itemBtns {
+                                transform: none;
+                                padding-left: calc(var(--bs-gutter-x)*.5);
+                                padding-top: 10px;
+                                & .itemBtnsInner {
+                                    & .itemBtn {
+                                        & a {
+                                            justify-content: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .howWeHelpSection {
+            & .howWeHelpInner {
+                & .howWeHelpHeading {
+                }
+                & .howWeHelpVideo {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        &::after {
+                        }
+                    }
+                    & .plyr {
+                        & .plyr__control--overlaid {
+                        }
+                    }
+                }
+                & .howWeHelpPartnerWithUs {
+                    & a {
+                        &:hover {
                         }
                     }
                 }
@@ -741,6 +1256,7 @@
             }
         }
         & .talkToExpert {
+            background: none;
             & .talkToExpertInner {
                 & .talkToExpertInner2 {
                     & .talkToExpertHeading {
@@ -760,6 +1276,118 @@
                             border-left: 1px dashed $white;
                         }
                         &:hover a {
+                        }
+                    }
+                }
+            }
+        }
+        & .popularSeachers {
+            & .popularSeachersInner {
+                & .popularSeachersHeading {
+                }
+                & .popularSeachersItems {
+                    & .popularSeachersItem {
+                        & .popularSeachersItemInner {
+                            & .itemImg {
+                                & img {
+                                }
+                            }
+                            & .itemTitleWithDetails {
+                                & .itemTitleWithDetailsInner {
+                                    & .itemTitle {
+                                    }
+                                    & .itemTitleBelowDetails {
+                                        & .itemTitleBelowDetailsInner {
+                                            & .itemUniversity {
+                                            }
+                                            & .itemType {
+                                                & span {
+                                                    & img {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .itemFeeDuration {
+                                & .itemFeeDurationInner {
+                                    & .itemCourseFee {
+                                        & .itemCourseFeeImg {
+                                            & img {
+                                            }
+                                        }
+                                        & .itemCourseFeeLabel {
+                                        }
+                                        & .itemCourseFeePrice {
+                                        }
+                                    }
+                                    & .itemCourseDuration {
+                                        & .itemCourseDurationImg {
+                                            & img {
+                                            }
+                                        }
+                                    }
+                                    & .itemCourseDurationLabel {
+                                    }
+                                    & .itemCourseDurationTime {
+                                    }
+                                }
+                            }
+                            & .itemBtns {
+                                & .itemBtnsInner {
+                                    & .itemBtn {
+                                        & a {
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .popularSeachersViewAll {
+                    & a {
+                        padding: 7px 28px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        & .howWeHelpSection {
+            & .howWeHelpInner {
+                & .howWeHelpHeading {
+                    margin-bottom: 0px;
+                }
+                & .howWeHelpVideo {
+                    &::before {
+                        width: 60px;
+                        height: 60px;
+                        inset: -17px auto auto -4px;
+                    }
+                    &::after {
+                        width: 60px;
+                        height: 60px;
+                        inset: auto -4px -17px auto;
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        &::after {
+                        }
+                    }
+                    & .plyr {
+                        & .plyr__control--overlaid {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+                & .howWeHelpPartnerWithUs {
+                    & a {
+                        padding: 7px 28px;
+                        font-size: 15px;
+                        &:hover {
                         }
                     }
                 }
@@ -834,6 +1462,103 @@
                         &.business {
                         }
                         &:hover a {
+                        }
+                    }
+                }
+            }
+        }
+        & .popularSeachers {
+            & .popularSeachersInner {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                & .popularSeachersHeading {
+                    margin-bottom: 20px;
+                }
+                & .popularSeachersItems {
+                    & .popularSeachersItem {
+                        & .popularSeachersItemInner {
+                            & .itemImg {
+                                & img {
+                                }
+                            }
+                            & .itemTitleWithDetails {
+                                & .itemTitleWithDetailsInner {
+                                    & .itemTitle {
+                                    }
+                                    & .itemTitleBelowDetails {
+                                        & .itemTitleBelowDetailsInner {
+                                            & .itemUniversity {
+                                            }
+                                            & .itemType {
+                                                & span {
+                                                    & img {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .itemFeeDuration {
+                                & .itemFeeDurationInner {
+                                    & .itemCourseFee {
+                                        & .itemCourseFeeImg {
+                                            & img {
+                                            }
+                                        }
+                                        & .itemCourseFeeLabel {
+                                        }
+                                        & .itemCourseFeePrice {
+                                        }
+                                    }
+                                    & .itemCourseDuration {
+                                        & .itemCourseDurationImg {
+                                            & img {
+                                            }
+                                        }
+                                    }
+                                    & .itemCourseDurationLabel {
+                                    }
+                                    & .itemCourseDurationTime {
+                                    }
+                                }
+                            }
+                            & .itemBtns {
+                                & .itemBtnsInner {
+                                    & .itemBtn {
+                                        & a {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .howWeHelpSection {
+            & .howWeHelpInner {
+                & .howWeHelpHeading {
+                }
+                & .howWeHelpVideo {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        &::after {
+                        }
+                    }
+                    & .plyr {
+                        & .plyr__control--overlaid {
+                        }
+                    }
+                }
+                & .howWeHelpPartnerWithUs {
+                    & a {
+                        &:hover {
                         }
                     }
                 }

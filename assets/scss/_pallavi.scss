@@ -39,9 +39,9 @@
                     & .capMain{
                         position: absolute;
                         width: 22.87px;
-                        height: 20px;
                         left: 48px;
-                        top: 33px;
+                        top: 50%;
+                        transform: translateY(-50%);
                         & img{
                             height: 20px;
                         }
@@ -96,6 +96,10 @@
                     & .university{
                         padding: 44px 38px 44px 38px;
                         text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
                         & img{
                         max-height: 68px;
                         max-width: 100%;
@@ -116,6 +120,11 @@
                             font-weight: 500;
                             font-size: 16px;
                             line-height: 24px;
+                            transition: 0.3s ease-in-out;
+                            &:hover {
+                                background-color: #B4111A;
+                                color: white;
+                            }
                         }
                     }
                 }
@@ -187,10 +196,15 @@
         .allPartnersFluid{
             & .allpartnersContainers{
                 & .allPartnersHeading{
+                    padding-top: 60px;
+                    font-size: 38px;
                 }
                 & .inputBox{
+                    margin-bottom: 70px;
                     & .inputClass{
-                        height: 85px;
+                        height: 80px;
+                        padding: 32px 90px 32px 115px;
+                        font-size: 17px;
                         &.colourClass{
                         }
                     }
@@ -199,7 +213,8 @@
                         }
                     }
                     & .searchMain{
-                        height: 77px;
+                        height: 70px;
+                        width: 70px;
                         position: absolute;
                         top: 4;
                         & img{
@@ -212,7 +227,7 @@
             & .partnersCardContainer{
                 & .paddingClass{
                     & .cardHeader{
-                        font-size: 14px;
+                        font-size: 15px;
                         padding: 15px 0 15px 15px;
                     }
                     & .headerArrow{
@@ -223,15 +238,16 @@
                         }
                     }
                     & .university{
-                        padding: 34px 38px 34px 38px !important;
+                        padding: 34px!important;
                         & img{
                         }
                     }
                     & .btnPadding{
                         padding: 0 15px 11px 15px;
                         & .bottomBtn{
-                            height: 39px;
+                            height: 37px;
                             padding: 0;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -243,27 +259,31 @@
         .allPartnersFluid{
         & .allpartnersContainers{
             & .allPartnersHeading{
+                padding-top: 40px;
+                font-size: 36px;
+                line-height: 65px;
             }
             & .inputBox{
-                margin-bottom: 70px;
+                margin-bottom: 50px;
                 & .inputClass{
-                    height: 65px;
+                    height: 60px;
                     padding-left: 70px;
+                    font-size: 16px;
                     &.colourClass{
                     }
                 }
                 & .capMain{
-                    top:20px;
                     left: 25px;
                     & img{
                     }
                 }
                 & .searchMain{
-                    width: 60px;
-                    height: 57px;
-                    position: absolute;
-                    top: 4px;
+                    width: 50px;
+                    height: 50px;
+                    top: 7px;
                     & img{
+                        width: 20px;
+                        height: 20px;
                     }
                 }
             }
@@ -274,7 +294,7 @@
             & .paddingClass{
                 & .cardHeader{
                     line-height: 23px;
-                    font-size: 14px;
+                    font-size: 15px;
                 }
                 & .headerArrow{
                     & img{
@@ -342,10 +362,14 @@
         .allPartnersFluid{
             & .allpartnersContainers{
                 & .allPartnersHeading{
+                    padding-top: 30px;
+                    font-size: 34px;
+                    line-height: 55px;
                 }
                 & .inputBox{
-                    margin-bottom: 50px;
+                    margin-bottom: 40px;
                     & .inputClass{
+                        font-size: 14px;
                         &.colourClass{
                         }
                     }
@@ -364,7 +388,7 @@
             & .partnersCardContainer{
                 & .paddingClass{
                     & .cardHeader{
-                        font-size: 13px;
+                        font-size: 14px;
                     }
                     & .headerArrow{
                         & img{
@@ -389,20 +413,21 @@
         .allPartnersFluid{
             & .allpartnersContainers{
                 & .allPartnersHeading{
-                    font-size: 35px;
-                    line-height: 40px;
-                    margin-bottom: 20px;
+                    font-size: 28px;
+                    line-height: 30px;
+                    margin-bottom: 12px;
                 }
                 & .inputBox{
-                    margin-bottom: 38px;
+                    margin-bottom: 30px;
                     & .inputClass{
-                        padding: 30px 118px 30px 60px;
-                        font-size: 11px;
+                        padding: 30px 58px 30px 46px;
+                        font-size: 13px;
                         height: 35px !important;
                         &.colourClass{
                         }
                     }
                     & .capMain{
+                        left: 12px;
                         & img{
                         }
                     }
@@ -423,6 +448,7 @@
             & .partnersCardContainer{
                 & .paddingClass{
                     & .cardHeader{
+                        font-size: 15px;
                     }
                     & .headerArrow{
                         & img{

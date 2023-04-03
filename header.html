@@ -104,281 +104,230 @@
         <main class="container-fluid">
             <div class="row mainInner">
                 <div class="col-12 px-0 flex-fill" data-page-name="landing">
-                    <navbar class="col-12 px-0 topNavbar d-flex align-items-center justify-content-between">
-                        <div class="logoBox">
-                            <a href="index.html" class="logoAnchor">
-                                <img src="assets/img/logo/logo.png" class="logoImg" alt="">
-                            </a>
-                        </div>
-                        <div class="linkBox d-none d-lg-flex">
-                            <ul class="m-0 p-0 list-unstyled d-flex align-items-center linkItems">
-                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">About Us</a></li>
-                                <li class="linkItem dropdown">
-                                    <a class="linkAnchor dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:;">Education Abroad</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
-                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
-                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
-                                    </ul>
-                                </li>
-                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Immigration</a></li>
-                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Countries</a></li>
-                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">News</a></li>
-                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Reviews</a></li>
-                            </ul>
-                        </div>
-                        <div class="btnBox d-none d-lg-flex align-items-center">
-                            <a href="javascript:;" class="partnerBtn">For Partners</a>
-                            <a href="javascript:;" class="loginBtn">Login / Register</a>
-                            <div class="contactBox">
-                                <div class="socialIcons d-flex align-items-center justify-content-end">
-                                    <a href="javascript:;" class="socialIcon">
-                                        <img src="assets/img/facebookIcon.svg" alt="">
-                                    </a>
-                                    <a href="javascript:;" class="socialIcon">
-                                        <img src="assets/img/instaIcon.svg" alt="">
-                                    </a>
-                                    <a href="javascript:;" class="socialIcon">
-                                        <img src="assets/img/youtubeIcon.svg" alt="">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="tel:(044) 484 09 58" class="callBtn"><img src="assets/img/svg/phoneDark.svg" alt=""> (044) 484 09 58</a>
-                                </div>
+                    <navbar class="topNavbar container-fluid d-block sticky-top">
+                        <div class="container d-flex align-items-center justify-content-between h-100">
+                            <div class="logoBox">
+                                <a href="index.html" class="logoAnchor">
+                                    <img src="./assets/img/logo/logo.svg" class="logoImg" alt="">
+                                </a>
                             </div>
-                            <a href="javascript:;" class="consultationBtn">
-                                <img src="assets/img/svg/consultWhite.svg" alt="">
-                                <span>Free Consultation</span>
-                            </a>
-                        </div>
-                        <div class="mobMenuIcon d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas">
-                            <img src="assets/img/svg/mobMenuIcon.svg" alt="">
+                            <div class="linkBox d-none d-lg-flex">
+                                <ul class="m-0 p-0 list-unstyled d-flex align-items-center linkItems">
+                                    <li class="linkItem"><a class="linkAnchor active" href="javascript:;">Home</a></li>
+                                    <li class="linkItem"><a class="linkAnchor" href="javascript:;">Student</a></li>
+                                    <li class="linkItem"><a class="linkAnchor" href="javascript:;">Collaboraton</a></li>
+                                    <li class="linkItem"><a class="linkAnchor" href="javascript:;">Gallery</a></li>
+                                    <li class="linkItem"><a class="linkAnchor" href="javascript:;">Cohort Programs</a></li>
+                                    <li class="linkItem"><a class="linkAnchor" href="javascript:;">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="btnBox d-flex align-items-center">
+                                <a href="javascript:;" class="loginBtn d-none d-lg-flex">Login</a>
+                                <a href="javascript:;" class="registerBtn d-none d-lg-flex">Register</a>
+                                <a href="javascript:;" class="iconAnchor heartIcon"><img src="./assets/img/svg/heartIcon.svg" alt="wishlist Icon"></a>
+                                <a href="javascript:;" class="iconAnchor searchIcon"><img src="./assets/img/svg/searchIcon.svg" alt="search Icon"></a>
+                                <a href="#menuOffcanvas" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas" class="iconAnchor menuIcon d-lg-none"><img src="./assets/img/svg/menuIcon.svg" alt="menu Icon"></a>
+                            </div>
                         </div>
                     </navbar>
-                    <div class="container-fluid heroSection">
-                        <div class="row">
-                            <div class="col-12 px-0">
-                                <div id="carouselExample" class="carousel slide carousel-fade">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active" style="--bg:url(../img/banner1.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-n5">
-                                                        <div class="row mt-n5 mx-5">
-                                                            <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
-                                                            <div class="col-12 findProgramBox">
-                                                                <div class="row mx-0 align-items-center h-100">
-                                                                    <div class="col-4">
-                                                                        <label for="" class="form-label">Location</label>
-                                                                        <input type="text" class="form-control" placeholder="Enter a country, city or university">
-                                                                    </div>
-                                                                    <div class="col-4">
-                                                                        <label for="" class="form-label">Subject</label>
-                                                                        <input type="text" class="form-control" placeholder="Enter a subject">
-                                                                    </div>
-                                                                    <div class="col-4">
-                                                                        <label for="" class="form-label invisible d-block">Subject</label>
-                                                                        <button class="btn submitBtn">Find your program matches <img src="assets/img/svg/arrowRightTheme1.svg" alt=""></button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item" style="--bg:url(../img/banner2.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-n5">
-                                                        <div class="row mt-n5 mx-5">
-                                                            <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
-                                                            <div class="col-12 chooseProgramBtn">
-                                                                <a href="javascript:;">Choose a program</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item" style="--bg:url(../img/banner3.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-n5">
-                                                        <div class="row mt-n5 mx-5">
-                                                            <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
-                                                            <div class="col-12 chooseProgramBtn">
-                                                                <a href="javascript:;">Choose a program</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="row">
-                                                    <div class="col-12 carouselBtn">
-                                                        <img src="./assets/img/svg/sliderArrowLeftLight.svg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="row">
-                                                    <div class="col-12 carouselBtn">
-                                                        <img src="./assets/img/svg/sliderArrowRightLight.svg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid whyChooseUs mt-5 pt-4">
-                        <div class="container whyChooseUsInner">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="row">
-                                                <div class="col-12 whyChooseUsTitle">Why do students choose us?</div>
-                                                <div class="col-12 whyChooseUsImg">
-                                                    <img src="./assets/img/svg/20Theme1.svg" alt="20Theme1">
-                                                </div>
-                                                <div class="col-12 whyChooseUsLearnMore">
-                                                    <a href="javascript:;">
-                                                        <span>Learn More</span>
-                                                        <span>
-                                                            <img src="./assets/img/svg/arrowRightTheme1.svg" alt="arrowRightTheme1">
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="row whyChooseUsContent">
-                                                <div class="col-12 whyChooseUsContentParagraph">Because of its uniqueness , because the SIR company is the organizer and founder of the Ukrainian Association of Agencies for International Education and Exchange (AIEEA UKRAINE), which is an association of leading educational agencies in Ukraine</div>
-                                                <div class="col-12 whyChooseUsContentParagraph">Through professionalism - since 2001, we have been working and developing for your successful study and career abroad</div>
-                                                <div class="col-12 whyChooseUsContentParagraph">Due to the quality of the provision of services at each stage of the student's training</div>
-                                                <div class="col-12 whyChooseUsContentParagraph">Due to the high trust of our clients , because we have helped more than 5000 students to get the desired education</div>
-                                                <div class="col-12 whyChooseUsContentParagraph">Through an individual approach , as our team guarantees an individual approach to each of its clients</div>
-                                                <div class="col-12 whyChooseUsContentParagraph">Through comprehensive support during your stay in Ukraine and studying abroad</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid studyAbroadSection">
+                    <div class="expertSection container-fluid mt-3">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 studyAbroadheading">Study abroad at Abertay University</div>
-                                <div class="col-xl-11 studyAbroadtext">
-                                    Previously known as the University of Abertay, Abertay University is a public institution located in the heart of Dundee, Scotland. The University boasts a close-knit campus, with all buildings and local amenities within 15 minutes of each other.
-                                </div>
-                                <div class="col-xl-11 studyAbroadtext">
-                                    The University offers a wide range of programs at undergraduate, postgraduate taught, and postgraduate research levels. Abertay is particularly known for its computer games degrees, and was the first university to offer such programs.
-                                </div>
-                                <div class="col-xl-11 studyAbroadtext">
-                                    The campus is made up of four buildings, with another four residence halls offering double and single rooms, bedsits, and rooms with en-suites. There are also a number of leisure facilities available to students on campus, including a gym and more than 20 sports clubs you can join.
+                                <div class="col-xxl-11 expertSectionInner">
+                                    <div class="row">
+                                        <div class="col-12 sectionHeading mb-4">For <span>Students</span></div>
+                                        <div class="col-12">
+                                            <div class="row mx-0 row-col-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 agentCardWrapper">
+                                                <div class="col">
+                                                    <div class="row mx-0 agentCard">
+                                                        <div class="col-12">
+                                                            <div class="agentImg rounded-circle overflow-hidden mx-auto">
+                                                                <img src="./assets/img/agent1.jpg" alt="agent image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 agentName">Liban George</div>
+                                                        <div class="col-12 agentDes">Operations Specialist <span class="d-block">Hyderabad</span></div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="callBtn"><img src="./assets/img/svg/callIcon.svg" alt="telephone Icon"> Request a Callback</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row mx-0 agentCard">
+                                                        <div class="col-12">
+                                                            <div class="agentImg rounded-circle overflow-hidden mx-auto">
+                                                                <img src="./assets/img/agent1.jpg" alt="agent image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 agentName">Liban George</div>
+                                                        <div class="col-12 agentDes">Operations Specialist <span class="d-block">Hyderabad</span></div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="callBtn"><img src="./assets/img/svg/callIcon.svg" alt="telephone Icon"> Request a Callback</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row mx-0 agentCard">
+                                                        <div class="col-12">
+                                                            <div class="agentImg rounded-circle overflow-hidden mx-auto">
+                                                                <img src="./assets/img/agent1.jpg" alt="agent image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 agentName">Liban George</div>
+                                                        <div class="col-12 agentDes">Operations Specialist <span class="d-block">Hyderabad</span></div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="callBtn"><img src="./assets/img/svg/callIcon.svg" alt="telephone Icon"> Request a Callback</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row mx-0 agentCard">
+                                                        <div class="col-12">
+                                                            <div class="agentImg rounded-circle overflow-hidden mx-auto">
+                                                                <img src="./assets/img/agent1.jpg" alt="agent image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 agentName">Liban George</div>
+                                                        <div class="col-12 agentDes">Operations Specialist <span class="d-block">Hyderabad</span></div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="callBtn"><img src="./assets/img/svg/callIcon.svg" alt="telephone Icon"> Request a Callback</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row mx-0 agentCard">
+                                                        <div class="col-12">
+                                                            <div class="agentImg rounded-circle overflow-hidden mx-auto">
+                                                                <img src="./assets/img/agent1.jpg" alt="agent image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 agentName">Liban George</div>
+                                                        <div class="col-12 agentDes">Operations Specialist <span class="d-block">Hyderabad</span></div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="callBtn"><img src="./assets/img/svg/callIcon.svg" alt="telephone Icon"> Request a Callback</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row mx-0 agentCard">
+                                                        <div class="col-12">
+                                                            <div class="agentImg rounded-circle overflow-hidden mx-auto">
+                                                                <img src="./assets/img/agent1.jpg" alt="agent image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 agentName">Liban George</div>
+                                                        <div class="col-12 agentDes">Operations Specialist <span class="d-block">Hyderabad</span></div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="callBtn"><img src="./assets/img/svg/callIcon.svg" alt="telephone Icon"> Request a Callback</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row mx-0 agentCard">
+                                                        <div class="col-12">
+                                                            <div class="agentImg rounded-circle overflow-hidden mx-auto">
+                                                                <img src="./assets/img/agent1.jpg" alt="agent image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 agentName">Liban George</div>
+                                                        <div class="col-12 agentDes">Operations Specialist <span class="d-block">Hyderabad</span></div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="callBtn"><img src="./assets/img/svg/callIcon.svg" alt="telephone Icon"> Request a Callback</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row mx-0 agentCard">
+                                                        <div class="col-12">
+                                                            <div class="agentImg rounded-circle overflow-hidden mx-auto">
+                                                                <img src="./assets/img/agent1.jpg" alt="agent image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 agentName">Liban George</div>
+                                                        <div class="col-12 agentDes">Operations Specialist <span class="d-block">Hyderabad</span></div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="callBtn"><img src="./assets/img/svg/callIcon.svg" alt="telephone Icon"> Request a Callback</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <footer class="container-fluid footer">
+                    <footer class="container-fluid footer mt-5">
                         <div class="container">
-                            <div class="row mx-0 topRow align-items-center">
-                                <div class="col-lg-auto">
-                                    <div class="footerText">
-                                        CENTER <br> FOR INTERNATIONAL PROGRAMS
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col-12 footerHeading mb-4 mb-lg-5">Agency Certifications</div>
+                                        <div class="col-auto col-lg-6 col-xl-auto certificateImg"><img src="./assets/img/footer1.png" alt="footer certificate"></div>
+                                        <div class="col-auto col-lg-6 col-xl-auto certificateImg"><img src="./assets/img/footer2.png" alt="footer certificate"></div>
                                     </div>
                                 </div>
-                                <div class="col-lg">
-                                    <ul class="m-0 p-0 list-unstyled d-flex align-items-lg-center linkItems flex-column flex-lg-row">
-                                        <li class="linkItem"><a class="linkAnchor" href="javascript:;">About Us</a></li>
-                                        <li class="linkItem"><a class="linkAnchor" href="javascript:;">Education Abroad</a></li>
-                                        <li class="linkItem"><a class="linkAnchor" href="javascript:;">Immigration</a></li>
-                                        <li class="linkItem"><a class="linkAnchor" href="javascript:;">Countries</a></li>
-                                        <li class="linkItem"><a class="linkAnchor" href="javascript:;">News</a></li>
-                                        <li class="linkItem"><a class="linkAnchor" href="javascript:;">Reviews</a></li>
-                                    </ul>
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col-12 footerHeading mt-3 mt-lg-0">Registered Office</div>
+                                        <div class="col-12 footerText mb-4 mb-lg-5 mt-3">16192 Coastal Highway, Lewes, Delaware 19958, United States</div>
+                                        <div class="col-12 footerHeading">India Operations Office</div>
+                                        <div class="col-12 footerText mb-4 mb-lg-5 mt-3">2nd Floor, 10 Skyview, South Tower <span class="d-xl-block">Sy. No. 83/1, Madhapur, Hyderabad 500081, India</span></div>
+                                    </div>    
                                 </div>
-                                <div class="col-lg-auto">
-                                    <div class="socialIcons d-flex align-items-center justify-content-lg-end">
-                                        <a href="javascript:;" class="socialIcon">
-                                            <img src="assets/img/facebookIcon.svg" alt="">
-                                        </a>
-                                        <a href="javascript:;" class="socialIcon">
-                                            <img src="assets/img/instaIcon.svg" alt="">
-                                        </a>
-                                        <a href="javascript:;" class="socialIcon">
-                                            <img src="assets/img/youtubeIcon.svg" alt="">
-                                        </a>
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col-xl px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-12 footerHeading">Email</div>
+                                                <a href="mailto:info@indoglobalstudies.org" class="col-12 footerText footerLink d-block mb-4 mb-lg-0">info@indoglobalstudies.org</a>
+                                                <a href="mailto:info@indoglobalstudies.org" class="col-12 footerText footerLink d-lg-block mb-4 mb-lg-5 d-none mt-3 invisible">info@indoglobalstudies.org</a>
+                                                <div class="col-12 footerHeading">Call Us On</div>
+                                                <div class="col-12">
+                                                    <div class="d-flex mt-3 align-items-center align-items-lg-start">
+                                                        <img class="flagImg" src="./assets/img/flagUsa.png" alt="usa flag">
+                                                        <a class="footerText footerLink" href="tel: +1 (417) 450‑9217"> +1 (417) 450‑9217</a>
+                                                    </div>
+                                                    <div class="d-flex mt-3 align-items-center align-items-lg-start">
+                                                        <img class="flagImg" src="./assets/img/indiaMap.png" alt="usa india">
+                                                        <div>
+                                                            <a class="footerText footerLink" href="tel:+91 99128 81199">+91 99128 81199</a>
+                                                            <a class="footerText footerLink" href="tel:+91 70932 82997"> | +91 70932 82997</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="col-xl-auto px-xl-0">
+                                            <ul class="m-0 p-0 list-unstyled socialBox d-flex flex-xl-column mt-3 mt-xl-0">
+                                                <li class="socialLinks pe-3 pe-xl-0"><a href="javascript:;"><img src="./assets/img/svg/facebookIcon.svg" alt="facebook icon"></a></li>
+                                                <li class="socialLinks pe-3 pe-xl-0"><a href="javascript:;"><img src="./assets/img/svg/instagramIcon.svg" alt="instagram icon"></a></li>
+                                                <li class="socialLinks pe-3 pe-xl-0"><a href="javascript:;"><img src="./assets/img/svg/twitterIcon.svg" alt="twitter icon"></a></li>
+                                                <li class="socialLinks pe-3 pe-xl-0"><a href="javascript:;"><img src="./assets/img/svg/whatsappIcon.svg" alt="whatsapp icon"></a></li>
+                                                <li class="socialLinks pe-3 pe-xl-0"><a href="javascript:;"><img src="./assets/img/svg/linkdinIcon.svg" alt="linkdin icon"></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="footerDivider"></div>
                                 </div>
                             </div>
-                            <div class="row mx-0 middleRow row-cols-2 row-cols-lg-5">
-                                <div class="col">
-                                    <div class="footerLinkHeader">Kyiv</div>
-                                    <ul class="m-0 p-0 list-unstyled footerLinks">
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">St. Sichovyh Streltsiv, 84 of. 1 (Lukyanivska city)</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">38(044) 484 09</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">5838(098) 247 63</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">8738(050) 829 18</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">8538(093) 305 70 42</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <div class="footerLinkHeader">Sumy</div>
-                                    <ul class="m-0 p-0 list-unstyled footerLinks">
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">St. Petropavlivska <br> 98A</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">38(098) 788 19 08</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">38(050) 604 01 33</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <div class="footerLinkHeader mobSpace">Kropyvnytskyi</div>
-                                    <ul class="m-0 p-0 list-unstyled footerLinks">
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">St. Yehorova 40, <br> office 302</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">38(066) 766 79 59</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <div class="footerLinkHeader mobSpace">Lviv</div>
-                                    <ul class="m-0 p-0 list-unstyled footerLinks">
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">St. Ivana Franka <br> 32, office 1</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">38(068) 348 62 88</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">38(063) 639 61 39</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <div class="footerLinkHeader">Lutsk</div>
-                                    <ul class="m-0 p-0 list-unstyled footerLinks">
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">St. Kopernyka, 8-A</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">38(050) 906 79 67</a></li>
-                                        <li class="footerLink"><a class="footerAnchor" href="javascript:;">38(067) 260 38 21</a></li>
-                                    </ul>
-                                </div>
+                            <div class="row middleRow border-top py-md-5 py-3 ">
+                                <div class="col-auto usefulHeader">Useful Links:</div>
+                                <div class="col-auto usefulLink"><a href="javascript:;">Home</a></div>
+                                <div class="col-auto usefulLink"><a href="javascript:;">Students</a></div>
+                                <div class="col-auto usefulLink"><a href="javascript:;">Collaboration</a></div>
+                                <div class="col-auto usefulLink"><a href="javascript:;">Gallery</a></div>
+                                <div class="col-auto usefulLink"><a href="javascript:;">Contact Us</a></div>
+                                <div class="col-auto usefulLink"><a href="javascript:;">Employee Login</a></div>
+                                <div class="col-auto usefulLink"><a href="javascript:;">University Login</a></div>
+                                <div class="col-auto usefulLink"><a href="javascript:;">Associate Login</a></div>
+
                             </div>
-                            <div class="row mx-0 bottomRow">
-                                <div class="col-lg-auto bottomText order-2 order-lg-1 copyrighText">Copyrights © 2018 CIP All Rights Reserved </div>
-                                <div class="col-lg order-1 order-lg-2">
-                                    <div class="row mx-0 justify-content-between">
-                                        <a href="javascript:;" class="col-auto bottomText px-0">Privacy Policy</a>
-                                        <a href="javascript:;" class="col-auto bottomText px-0">info@studyabroad.ua</a>
-                                    </div>
+                            <div class="row bottomRow">
+                                <div class="col copyRightText text-center text-lg-start">© 2022 Indo Global Studies LLC. All Rights Reserved.</div>
+                                <div class="col-auto d-lg-flex align-items-center d-none">
+                                    <a class="bottomLinks pe-3" href="javascript:;">Disclaimer</a>
+                                    <a class="bottomLinks px-3" href="javascript:;">Terms of Use</a>
+                                    <a class="bottomLinks ps-3" href="javascript:;">Privacy Policy</a>
                                 </div>
                             </div>
                         </div>
@@ -389,7 +338,7 @@
         <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
             <div class="offcanvas-header">
                 <a href="index.html" class="offcanvas-title" id="menuOffcanvasLabel">
-                    <img src="assets/img/logo/logo.png" alt="">
+                    <img src="./assets/img/logo/logo.svg" alt="logo Img">
                 </a>
                 <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -414,69 +363,16 @@
             </div>
             <div class="offcanvas-footer">
                 <div class="row mx-0">
-                    <div class="col-6">
-                        <a href="javascript:;" class="partnerBtn d-flex align-items-center justify-content-center">For Partners</a>
+                    <div class="col-6 px-0 pe-2">
+                        <a href="javascript:;" class="loginBtn">Login</a>
                     </div>
-                    <div class="col-6">
-                        <a href="javascript:;" class="loginBtn d-flex align-items-center justify-content-center">Login / Register</a>
+                    <div class="col-6 px-0 ps-2">
+                        <a href="javascript:;" class="registerBtn">Register</a>
                     </div>
-                    <div class="contactBox col-12 d-flex align-items-center justify-content-between py-3">
-                        <div>
-                            <a href="tel:(044) 484 09 58" class="callBtn"><img src="assets/img/svg/phoneDark.svg" alt=""> (044) 484 09 58</a>
-                        </div>
-                        <div class="socialIcons d-flex align-items-center justify-content-end">
-                            <a href="javascript:;" class="socialIcon">
-                                <img src="assets/img/facebookIcon.svg" alt="">
-                            </a>
-                            <a href="javascript:;" class="socialIcon">
-                                <img src="assets/img/instaIcon.svg" alt="">
-                            </a>
-                            <a href="javascript:;" class="socialIcon">
-                                <img src="assets/img/youtubeIcon.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <a href="javascript:;" class="consultationBtn col-12 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/svg/consultWhite.svg" alt="">
-                        <span>Free Consultation</span>
-                    </a>
                 </div>
             </div>
         </div>
-        <div class="navbarStickyIcons d-none d-lg-block d-xl-none">
-            <a class="stickyIcon" href="javascript:;">
-                <div class="stickyImg">
-                    <img src="assets/img/facebookIcon.svg" alt="">
-                </div>
-                <div class="hiddenText">Facebook</div>
-            </a>
-            <a class="stickyIcon" href="javascript:;">
-                <div class="stickyImg">
-                    <img src="assets/img/instaIcon.svg" alt="">
-                </div>
-                <div class="hiddenText">Instagram</div>
-            </a>
-            <a class="stickyIcon" href="javascript:;">
-                <div class="stickyImg">
-                    <img src="assets/img/youtubeIcon.svg" alt="">
-                </div>
-                <div class="hiddenText">Youtube</div>
-            </a>
-            <a class="stickyIcon" href="tel:(044) 484 09 58">
-                <div class="stickyImg">
-                    <img src="assets/img/svg/phoneDark.svg" alt="">
-                </div>
-                <div class="hiddenText">(044) 484 09 58</div>
-            </a>
-            <a class="stickyIcon" href="javascript:;">
-                <div class="stickyImg">
-                    <img src="assets/img/svg/consultRed.svg" alt="">
-                </div>
-                <div class="hiddenText">Free Consultation</div>
-            </a>
-        </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
-        
     </body>
 </html>

@@ -242,6 +242,186 @@
                 }
             }
         }
+        & .popularSeachers {
+            & .popularSeachersInner {
+                & .popularSeachersHeading {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 54px;
+                    /* identical to box height */
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    color: #1D1D1D;
+                    margin-bottom: 36px;
+                }
+                & .popularSeachersItems {
+                    & .popularSeachersItem {
+                        background: #FFFFFF;
+                        border: 1px solid #D5D5D5;
+                        border-radius: 5px;
+                        & .popularSeachersItemInner {
+                            padding: 32px 44px;
+                            & .itemImg {
+                                & img {
+                                    max-width: 150px;
+                                    max-height: 47px;
+                                    object-fit: contain;
+                                    object-position: center;
+                                }
+                            }
+                            & .itemTitleWithDetails {
+                                & .itemTitleWithDetailsInner {
+                                    & .itemTitle {
+                                        font-family: 'Poppins';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 20px;
+                                        line-height: 30px;
+                                        /* identical to box height */
+
+                                        display: flex;
+                                        align-items: center;
+
+                                        color: #000000;
+                                    }
+                                    & .itemTitleBelowDetails {
+                                        & .itemTitleBelowDetailsInner {
+                                            & .itemUniversity {
+                                                font-family: 'Poppins';
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                /* identical to box height */
+                                                
+                                                display: flex;
+                                                align-items: center;
+                                                
+                                                color: #B4111A;
+                                            }
+                                            & .itemType {
+                                                & span {
+                                                    font-family: 'Poppins';
+                                                    font-style: normal;
+                                                    font-weight: 500;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    /* identical to box height */
+
+                                                    display: flex;
+                                                    align-items: center;
+
+                                                    color: #7E7E7E;
+                                                    & img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .itemFeeDuration {
+                                & .itemFeeDurationInner {
+                                    & .itemCourseFee {
+                                        & .itemCourseFeeImg {
+                                            & img {
+
+                                            }
+                                        }
+                                        & .itemCourseFeeLabel {
+                                            font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            /* identical to box height */
+                                            
+                                            display: flex;
+                                            align-items: center;
+                                            
+                                            color: #131313;
+                                        }
+                                        & .itemCourseFeePrice {
+                                            font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            /* identical to box height */
+                                            
+                                            display: flex;
+                                            align-items: center;
+                                            
+                                            color: #3E3E3E;
+                                        }
+                                    }
+                                    & .itemCourseDuration {
+                                        & .itemCourseDurationImg {
+                                            & img {
+
+                                            }
+                                        }
+                                    }
+                                    & .itemCourseDurationLabel {
+                                        font-family: 'Poppins';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        
+                                        color: #131313;
+                                    }
+                                    & .itemCourseDurationTime {
+                                        font-family: 'Poppins';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        
+                                        color: #3E3E3E;
+                                    }
+                                }
+                            }
+                            & .itemBtns {
+                                & .itemBtnsInner {
+                                    & .itemBtn {
+                                        & a {
+                                            background: #FFFFFF;
+                                            border: 1px solid #C1C1C1;
+                                            border-radius: 5px;
+                                            padding: 8px 30px;
+                                            font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            /* identical to box height */
+
+
+                                            color: #B4111A;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`

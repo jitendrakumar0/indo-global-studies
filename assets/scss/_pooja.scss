@@ -865,6 +865,54 @@
                 }
             }
         }
+        
+        .partnerSection {
+            padding-top: 45px;
+            padding-bottom: 45px;
+            &.bgPartner {
+            }
+            & .secHead {
+                padding-bottom: 40px;
+                font-size: 36px;
+                line-height: 50px;
+            }
+            & .viewAllBtn {
+                height: 52px;
+                &:hover {
+                }
+            }
+            .partnerCard{
+                & .cardHeader{
+                }
+                & .headerArrow{
+                    & img{
+                    }
+                }
+                & .university{
+                    & img{
+                    }
+                }
+                & .btnPadding{
+                    & .bottomBtn{
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            .swiper-button-prev,
+            .swiper-button-next,
+            .prevBtn,
+            .nextBtn {
+                &::after {
+                }
+                &.swiper-button-disabled {
+                }
+            }
+            .swiper-button-prev, .prevBtn {
+            }
+            .swiper-button-next, .nextBtn {
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
@@ -992,6 +1040,47 @@
                         }
                     }
                 }
+            }
+        }
+        .partnerSection {
+            &.bgPartner {
+            }
+            & .secHead {
+            }
+            & .viewAllBtn {
+                &:hover {
+                }
+            }
+            .partnerCard{
+                & .cardHeader{
+                }
+                & .headerArrow{
+                    & img{
+                    }
+                }
+                & .university{
+                    & img{
+                    }
+                }
+                & .btnPadding{
+                    & .bottomBtn{
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            .swiper-button-prev,
+            .swiper-button-next,
+            .prevBtn,
+            .nextBtn {
+                &::after {
+                }
+                &.swiper-button-disabled {
+                }
+            }
+            .swiper-button-prev, .prevBtn {
+            }
+            .swiper-button-next, .nextBtn {
             }
         }
     }
@@ -1145,6 +1234,57 @@
                         }
                     }
                 }
+            }
+        }
+        .partnerSection {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            &.bgPartner {
+            }
+            & .secHead {
+                padding-bottom: 30px;
+                font-size: 30px;
+                line-height: 35px;
+            }
+            & .viewAllBtn {
+                
+                margin-top: 25px;
+                font-size: 15px;
+                width: 126px;
+                height: 48px;
+                &:hover {
+                }
+            }
+            .partnerCard{
+                & .cardHeader{
+                }
+                & .headerArrow{
+                    & img{
+                    }
+                }
+                & .university{
+                    & img{
+                    }
+                }
+                & .btnPadding{
+                    & .bottomBtn{
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            .swiper-button-prev,
+            .swiper-button-next,
+            .prevBtn,
+            .nextBtn {
+                &::after {
+                }
+                &.swiper-button-disabled {
+                }
+            }
+            .swiper-button-prev, .prevBtn {
+            }
+            .swiper-button-next, .nextBtn {
             }
         }
     }
@@ -1307,6 +1447,56 @@
                         }
                     }
                 }
+            }
+        }
+        .partnerSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            &.bgPartner {
+            }
+            & .secHead {
+                padding-bottom: 20px;
+                font-size: 23px;
+                line-height: 25px;
+            }
+            & .viewAllBtn {
+                margin-top: 25px;
+                font-size: 14px;
+                width: 126px;
+                height: 48px;
+                &:hover {
+                }
+            }
+            .partnerCard{
+                & .cardHeader{
+                }
+                & .headerArrow{
+                    & img{
+                    }
+                }
+                & .university{
+                    & img{
+                    }
+                }
+                & .btnPadding{
+                    & .bottomBtn{
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            .swiper-button-prev,
+            .swiper-button-next,
+            .prevBtn,
+            .nextBtn {
+                &::after {
+                }
+                &.swiper-button-disabled {
+                }
+            }
+            .swiper-button-prev, .prevBtn {
+            }
+            .swiper-button-next, .nextBtn {
             }
         }
     }

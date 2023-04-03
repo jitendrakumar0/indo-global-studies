@@ -136,7 +136,9 @@
                     background: rgba(255, 255, 255, 0.74);
                     border: 1px solid #E3E3E3;
                     border-radius: 20px;
-                    padding: 44px 65px;
+                    padding: 44px 45px;
+                    margin-top: 55px;
+                    margin-bottom: 55px;
                     & .agentSignUpMainHead{
                         font-family: 'Poppins';
                         font-style: normal;
@@ -174,6 +176,68 @@
                         font-size: 18px;
                         line-height: 27px;
                         color: #9B9B9B;
+                        margin-bottom: 14px;
+                        box-shadow: none;
+                    }
+                    & .agentSignUpBtn{
+                        background: #B20E19;
+                        border: 1px solid #B20E19;
+                        border-radius: 6px;
+                        height: 74px;
+                        border: 1px solid #B20E19;
+                        color: white;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 26px;
+                        line-height: 39px;
+                        width: 100%;
+                        margin-top: 11px;
+                        &:hover{
+                            background-color: white;
+                            border-color: #B20E19;
+                            color: #B20E19;
+                        }
+                    }
+                    & .agentLblTopTxt{
+                        margin-top: 32px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 33px;
+                        color: #545454;
+                        display: block;
+                        margin-bottom: 6px;
+                    }
+                    & .agentLbl{
+                        background: rgba(180, 17, 26, 0.03);
+                        border: 1px dashed #000000;
+                        border-radius: 20px;
+                        height: 130px;
+                        padding: 36px 79px;
+                        display: block;
+                        margin-bottom: 26px;
+                        & span:first-child{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #9B9B9B;
+                            display: block;
+                            text-align: center;
+                        }
+                        & span:last-child{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #B4111A99;
+                            display: block;
+                            text-align: center;
+                        }
                     }
                 }
             }
@@ -253,6 +317,42 @@
                 }
             }
         }
+        
+        .agentSignUpOnefluid{
+            & .agentSingnUpContainer{
+                & .agentSignUpBox{
+                    
+                    & .agentSignUpMainHead{
+                    }
+                    & .noteBox{
+                        
+                        & .noteTxt{
+                            
+                        }
+                    }
+                    & .agentSignUpFormInp{
+                        
+                    }
+                    & .agentSignUpBtn{
+                        
+                        &:hover{
+                            
+                        }
+                    }
+                    & .agentLblTopTxt{
+                        margin-top: 0;
+                    }
+                    & .agentLbl{
+                        & span:first-child{
+                            font-size: 16px;
+                        }
+                        & span:last-child{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
@@ -313,6 +413,47 @@
             }
         }
     }
+    .agentSignUpOnefluid{
+        & .agentSingnUpContainer{
+            & .agentSignUpBox{
+                
+                & .agentSignUpMainHead{
+                    font-size: 25px;
+                }
+                & .noteBox{
+                    
+                    & .noteTxt{
+                        font-size: 15px;
+                    }
+                }
+                & .agentSignUpFormInp{
+                    height: 56px;
+                    font-size: 15px;
+                }
+                & .agentSignUpBtn{
+                    height: 56px;
+                    font-size: 15px;
+                    &:hover{
+                        
+                    }
+                }
+                & .agentLblTopTxt{
+                    margin-top: 0;
+                    font-size: 18px;
+                }
+                & .agentLbl{
+                    padding: 30px 35px;
+                    height: 110px;
+                    & span:first-child{
+                        font-size: 15px;
+                    }
+                    & span:last-child{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 
     @include media-breakpoint-down(lg) {
@@ -351,6 +492,45 @@
                     }
                     & .btnPadding{
                         & .bottomBtn{
+                        }
+                    }
+                }
+            }
+        }
+        .agentSignUpOnefluid{
+            & .agentSingnUpContainer{
+                & .agentSignUpBox{
+                    padding: 25px 25px;
+                    & .agentSignUpMainHead{
+                        margin-bottom: 15px;
+                    }
+                    & .noteBox{
+                        padding: 18px 18px;
+                        & .noteTxt{
+                            line-height: 21px;
+                        }
+                    }
+                    & .agentSignUpFormInp{
+                        padding: 24px 18px;
+                    }
+                    & .agentSignUpBtn{
+                        
+                        &:hover{
+                            
+                        }
+                    }
+                    & .agentLblTopTxt{
+                        font-size: 16px !important;
+                        margin-top: 0;
+                    }
+                    & .agentLbl{
+                        padding: 18px 18px;
+                        height: 100px;
+                        & span:first-child{
+                            font-size: 16px;
+                        }
+                        & span:last-child{
+                            font-size: 14px;
                         }
                     }
                 }
@@ -402,6 +582,52 @@
                     }
                     & .btnPadding{
                         & .bottomBtn{
+                        }
+                    }
+                }
+            }
+        }
+        .agentSignUpOnefluid{
+            & .agentSingnUpContainer{
+                & .agentSignUpBox{
+                    padding: 20px 20px !important;
+                    margin-top: 55px;
+                    & .agentSignUpMainHead{
+                        font-size: 20px;
+                        margin-bottom: 12px;
+                    }
+                    & .noteBox{
+                        padding: 12px 16px;
+                        & .noteTxt{
+                            font-size: 14px;
+                            line-height: 21px;
+                        }
+                    }
+                    & .agentSignUpFormInp{
+                        height: 40px;
+                        font-size: 13px;
+                        padding: 24px 18px;
+                    }
+                    & .agentSignUpBtn{
+                        height: 50px;
+                        font-size: 14px;
+                        &:hover{
+                            
+                        }
+                    }
+                    & .agentLblTopTxt{
+                        margin-top: 0;
+                        font-size: 15px;
+                    }
+                    & .agentLbl{
+                        height: 90px;
+                        padding: 18px 18px;
+                        margin-bottom: 15px;
+                        & span:first-child{
+                            font-size: 12px;
+                        }
+                        & span:last-child{
+                            font-size: 12px;
                         }
                     }
                 }
@@ -465,9 +691,353 @@
                 }
             }
         }
+        .agentSignUpOnefluid{
+            & .agentSingnUpContainer{
+                & .agentSignUpBox{
+                    // padding: 12px 12px;
+                    margin-top: 0;
+                    padding: 20px 0 !important;
+                    border: none;
+                    & .agentSignUpMainHead{
+                        margin-bottom: 5px;
+                        font-size:14px ;
+                    }
+                    & .noteBox{
+                        padding: 16px 16px;
+                        & .noteTxt{
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
+                    }
+                    & .agentSignUpFormInp{
+                        font-size: 12px;
+                        padding: 24px 14px;
+                    }
+                    & .agentSignUpBtn{
+                        
+                        &:hover{
+                            
+                        }
+                    }
+                    & .agentLblTopTxt{
+                        font-size: 14px;
+                        margin-top: 0;
+                    }
+                    & .agentLbl{
+                        padding: 12px 12px;
+                        height: 90px;
+                        margin-bottom: 15px;
+                        & span:first-child{
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                        & span:last-child{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+.indexTestimonialsFluid{
+    // background-color: #FAFAFA;
+    background-color: #FAFAFA;
+    height: 100%;
+    padding: 0 !important;
+    & .indexTestimonialsContainer{
+        & .testimonialsHeading{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+            color: #1D1D1D;
+            text-align: center;
+            margin-top: 83px;
+            margin-bottom: 63px;
+        }
+        & .swiper {
+            width: 100%;
+            height: 100%;
+            & .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        & .testimonialsImageSwiper{
+            position: relative !important;
+            & .swiperWrapper{
+                & .swiperSlide{
+                    background: unset !important;
+                    & .testimonialsImage{
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        & .vedioIcon{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 56px;
+                            height: 56px;
+                        }
+                    }
+                }
+            }
+        }
+        & .swiperBtnsClass{
+            & .swiper-button-prev{
+                &::after{
+                    display: none;
+                }
+                width: 41px;
+                height: 41px;
+                border-radius: 50%;
+                background: #F6F8F9;
+                box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                background-image: url(../img/svg/rightarrowwhite.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0.9;
+                position: absolute;
+                left: -5%;
+                top: 50%;
+            }
+            & .swiper-button-next{
+                &::after{
+                    display: none;
+                }
+                width: 41px;
+                height: 41px;
+                border-radius: 50%;
+                background: #F6F8F9;
+                box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                background-image: url(../img/svg/leftarrowwhite.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0.9;
+                position: absolute;
+                right: -5%;
+                top: 50%;
+            }
 
+        }
+    }
+}
+@include media-breakpoint-down(xxl) {
+    .indexTestimonialsFluid{
+        & .indexTestimonialsContainer{
+            & .testimonialsHeading{
+            }
+            & .swiper {
+                & .swiper-slide {
+                }
+            }
+            & .testimonialsImageSwiper{
+                & .swiperWrapper{
+                    & .swiperSlide{
+                        & .testimonialsImage{
+                            & img{
+                            }
+                            & .vedioIcon{
+                            }
+                        }
+                    }
+                }
+            }
+            & .swiperBtnsClass{
+                & .swiper-button-prev{
+                    &::after{
+                    }
+                    position: absolute;
+                    top: 52%;
+                    left: 1%;
+                }
+                & .swiper-button-next{
+                    &::after{
+                    }
+                    position: absolute;
+                    top: 52%;
+                    right: 1%;
+                }
+    
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xl) {
+    .indexTestimonialsFluid{
+        & .indexTestimonialsContainer{
+            & .testimonialsHeading{
+            }
+            & .swiper {
+                & .swiper-slide {
+                }
+            }
+            & .testimonialsImageSwiper{
+                & .swiperWrapper{
+                    & .swiperSlide{
+                        & .testimonialsImage{
+                            & img{
+                            }
+                            & .vedioIcon{
+                            }
+                        }
+                    }
+                }
+            }
+            & .swiperBtnsClass{
+                & .swiper-button-prev{
+                    &::after{
+                    }
+                    position: absolute;
+                    top: 52%;
+                    left: 2%;
+                }
+                & .swiper-button-next{
+                    &::after{
+                    }
+                    position: absolute;
+                    top: 52%;
+                    right: 2%;
+                }
+    
+            }
+        }
+    }
+}
+@include media-breakpoint-down(lg) {
+    .indexTestimonialsFluid{
+        & .indexTestimonialsContainer{
+            & .testimonialsHeading{
+            }
+            & .swiper {
+                & .swiper-slide {
+                }
+            }
+            & .testimonialsImageSwiper{
+                & .swiperWrapper{
+                    & .swiperSlide{
+                        & .testimonialsImage{
+                            & img{
+                            }
+                            & .vedioIcon{
+                            }
+                        }
+                    }
+                }
+            }
+            & .swiperBtnsClass{
+                & .swiper-button-prev{
+                    &::after{
+                    }
+                    position: absolute;
+                    left: 5%;
+                }
+                & .swiper-button-next{
+                    &::after{
+                    }
+                    position: absolute;
+                    right: 5%;
+                }
+    
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .indexTestimonialsFluid{
+        & .indexTestimonialsContainer{
+            & .testimonialsHeading{
+            }
+            & .swiper {
+                & .swiper-slide {
+                }
+            }
+            & .testimonialsImageSwiper{
+                & .swiperWrapper{
+                    & .swiperSlide{
+                        & .testimonialsImage{
+                            & img{
+                            }
+                            & .vedioIcon{
+                            }
+                        }
+                    }
+                }
+            }
+            & .swiperBtnsClass{
+                & .swiper-button-prev{
+                    &::after{
+                    }
+                    position: absolute;
+                    left: 6%;
+                    top: 52%;
+                }
+                & .swiper-button-next{
+                    &::after{
+                    }
+                    position: absolute;
+                    right: 2%;
+                    top: 52%;
+                }
+    
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    .indexTestimonialsFluid{
+        & .indexTestimonialsContainer{
+            & .testimonialsHeading{
+            }
+            & .swiper {
+                & .swiper-slide {
+                }
+            }
+            & .testimonialsImageSwiper{
+                & .swiperWrapper{
+                    & .swiperSlide{
+                        & .testimonialsImage{
+                            & img{
+                            }
+                            & .vedioIcon{
+                            }
+                        }
+                    }
+                }
+            }
+            & .swiperBtnsClass{
+                & .swiper-button-prev{
+                    &::after{
+                    }
+                    position: absolute;
+                    left: 9%;
+                    top: 52%;
+                }
+                & .swiper-button-next{
+                    &::after{
+                    }
+                    position: absolute;
+                    right: 9%;
+                    top: 52%;
+                }
+    
+            }
+        }
+    }
+}
 [data-bs-theme=dark] {
     & [data-page-name=example] {
         @include dark-media-breakpoint(basic) {
@@ -499,6 +1069,5 @@
         }
     }
 }
-
 // ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 

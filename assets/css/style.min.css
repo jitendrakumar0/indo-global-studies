@@ -1532,6 +1532,152 @@ body .overflow-auto-hidden {
     font-size: 12px;
   }
 }
+.indexTestimonialsFluid {
+  background-color: #FAFAFA;
+  height: 100%;
+  padding: 0 !important;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .testimonialsHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #1D1D1D;
+  text-align: center;
+  margin-top: 83px;
+  margin-bottom: 63px;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .swiper {
+  width: 100%;
+  height: 100%;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .testimonialsImageSwiper {
+  position: relative !important;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .testimonialsImageSwiper .swiperWrapper .swiperSlide {
+  background: unset !important;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .testimonialsImageSwiper .swiperWrapper .swiperSlide .testimonialsImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .testimonialsImageSwiper .swiperWrapper .swiperSlide .testimonialsImage img {
+  width: 100%;
+  height: 100%;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .testimonialsImageSwiper .swiperWrapper .swiperSlide .testimonialsImage .vedioIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-prev {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #F6F8F9;
+  box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background-image: url(../img/svg/rightarrowwhite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  position: absolute;
+  left: -5%;
+  top: 50%;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-prev::after {
+  display: none;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-next {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #F6F8F9;
+  box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background-image: url(../img/svg/leftarrowwhite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  position: absolute;
+  right: -5%;
+  top: 50%;
+}
+.indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-next::after {
+  display: none;
+}
+
+@media (max-width: 1399.98px) {
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-prev {
+    position: absolute;
+    top: 52%;
+    left: 1%;
+  }
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-next {
+    position: absolute;
+    top: 52%;
+    right: 1%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-prev {
+    position: absolute;
+    top: 52%;
+    left: 2%;
+  }
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-next {
+    position: absolute;
+    top: 52%;
+    right: 2%;
+  }
+}
+@media (max-width: 991.98px) {
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-prev {
+    position: absolute;
+    left: 5%;
+  }
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-next {
+    position: absolute;
+    right: 5%;
+  }
+}
+@media (max-width: 767.98px) {
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-prev {
+    position: absolute;
+    left: 6%;
+    top: 52%;
+  }
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-next {
+    position: absolute;
+    right: 2%;
+    top: 52%;
+  }
+}
+@media (max-width: 575.98px) {
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-prev {
+    position: absolute;
+    left: 9%;
+    top: 52%;
+  }
+  .indexTestimonialsFluid .indexTestimonialsContainer .swiperBtnsClass .swiper-button-next {
+    position: absolute;
+    right: 9%;
+    top: 52%;
+  }
+}
 .topNavbar {
   height: 86px;
   background-color: #F6F8F9;

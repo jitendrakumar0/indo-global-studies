@@ -1,0 +1,586 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  testimonial start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+    @include media-breakpoint(basic) {
+        .fs-12 {
+            font-size: 12px !important;
+        }
+       .testimonialMain, .parentSayMain {
+        padding: 45px 0 70px;
+        & .sectionHeading {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+            padding-bottom: 55px;
+            color: #1D1D1D;
+            & .textColored{
+                color: #B4111A;
+            }
+        }
+        & .testimonialInner {
+            & .card {
+                &.testimonialItem {
+                    padding: 32px 16px;
+                    border: 1px solid #EDEDED;
+                    border-radius: 5px;
+                    & .topDot  {
+                        top: -13px;
+                    }
+                    & .imgOuter{
+                        width: 63px;
+                        height: 63px;
+                        & img {
+                            object-fit: cover;
+                            object-position: top center;
+                        }
+                    }
+                    & .cardTitle {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #000000;
+                        margin-top: 10px;
+                    }
+                    & .pera {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #000000;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                    }
+                    & .subDetail {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #B4111A;
+                        & .univercityName {
+                        }
+                        & .univercityLocation {
+                            color: #9B9B9B;
+                        }
+                    }
+                }
+            }
+            & .swiper {
+                &.mytestimonial  {
+                    padding-bottom: 45px;
+                    & .swiper-wrapper {
+                        & .swiper-slide {
+                        }
+                    }
+                    & .swiper-pagination{
+                        bottom: 0 !important;
+                        top: unset;
+                        & .swiper-pagination-bullet{
+                            width: 14px;
+                            height: 5px;
+                            transition: ease-in-out .3s;
+                            border-radius: 50px;
+                            background-color: #B4111A;
+                            opacity: 1;
+                            max-width: 0 5px;
+                            &.swiper-pagination-bullet-active {
+                                width: 42px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       }
+       .modal {
+        &.testimonialDetail {
+            & .card {
+                &.testimonialItem {
+                    padding: 32px 16px;
+                    border: 1px solid #EDEDED;
+                    border-radius: 5px;
+                    & .topDot  {
+                        top: -13px;
+                    }
+                    & .imgOuter{
+                        width: 80px;
+                        height: 80px;
+                        & img {
+                            object-fit: cover;
+                            object-position: top center;
+                        }
+                    }
+                    & .cardTitle {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #000000;
+                        margin-top: 10px;
+                    }
+                    & .pera {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #000000;
+                    }
+                    & .subDetail {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #B4111A;
+                        & .univercityName {
+                        }
+                        & .univercityLocation {
+                            color: #9B9B9B;
+                        }
+                    }
+                }
+            }
+        }
+       }
+
+
+       .popularCountries {
+        padding: 80px 0;
+        & .sectionHading {
+            & .topHeading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: #808080;
+            }
+            & .mainHeading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 60px;
+                text-transform: capitalize;
+                color: #000000;
+                margin-top: 6px;
+                &:before {
+                    content: '';
+                    width: 7px;
+                    height: 100px;
+                    display: block;
+                    background: #B4111A;
+                }
+            }
+        }
+        & .cardSection {
+            margin-top: 67px;
+            & .cardOuter {
+                & .imgOuter {
+                    border-radius: 4px;
+                    border: 1px solid #DBDBDB;
+                    & img {
+                        object-fit: cover;
+                        object-position: top center;
+                    }
+                }
+                & .countrieName {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    color: #808080;
+                }
+            }
+        }
+       }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+        .testimonialMain, .parentSayMain {
+            padding: 40px 0;
+            & .sectionHeading {
+                font-size: 36px;
+                line-height: 48px;
+                padding-bottom: 45px;
+                & .textColored{
+                }
+            }
+            & .testimonialInner {
+                & .card {
+                    &.testimonialItem {
+                        padding: 24px 16px;
+                        & .topDot  {
+                        }
+                        & .imgOuter{
+                            width: 48px;
+                            height: 48px;
+                            & img {
+                            }
+                        }
+                        & .cardTitle {
+                            font-size: 16px;
+                            line-height: 18px;
+                            margin-top: 8px;
+                        }
+                        & .pera {
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                        & .subDetail {
+                            font-size: 14px;
+                            line-height: 18px;
+                            & .univercityName {
+                            }
+                            & .univercityLocation {
+                                color: #9B9B9B;
+                            }
+                        }
+                    }
+                }
+                & .swiper {
+                    &.mytestimonial  {
+                        & .swiper-wrapper {
+                            & .swiper-slide {
+                            }
+                        }
+                        & .swiper-pagination{
+                            & .swiper-pagination-bullet{
+                                &.swiper-pagination-bullet-active {
+                                    width: 36px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .modal {
+            &.testimonialDetail {
+                & .card {
+                    &.testimonialItem {
+                        border: 1px solid #EDEDED;
+                        border-radius: 5px;
+                        & .imgOuter{
+                            width: 70px;
+                            height: 70px;
+                            & img {
+                            }
+                        }
+                        & .cardTitle {
+                        }
+                        & .pera {
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                        & .subDetail {
+                            font-size: 14px;
+                            line-height: 18px;
+                            & .univercityName {
+                            }
+                            & .univercityLocation {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .popularCountries {
+            padding: 60px 0;
+            & .sectionHading {
+                & .topHeading {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                & .mainHeading {
+                    font-size: 32px;
+                    line-height: 48px;
+                    &:before {
+                        height: 80px;
+                    }
+                }
+            }
+            & .cardSection {
+                margin-top: 48px;
+                & .cardOuter {
+                    & .imgOuter {
+                        & img {
+                        }
+                    }
+                    & .countrieName {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .testimonialMain, .parentSayMain {
+            & .sectionHeading {
+                font-size: 28px;
+                line-height: 40px;
+                padding-bottom: 36px;
+                & .textColored{
+                }
+            }
+            & .testimonialInner {
+                & .card {
+                    &.testimonialItem {
+                        & .topDot  {
+                        }
+                        & .imgOuter{
+                            width: 40px;
+                            height: 40px;
+                            & img {
+                            }
+                        }
+                        & .cardTitle {
+                        }
+                        & .pera {
+                        }
+                        & .subDetail {
+                            & .univercityName {
+                            }
+                            & .univercityLocation {
+                            }
+                        }
+                    }
+                }
+                & .swiper {
+                    &.mytestimonial  {
+                        & .swiper-wrapper {
+                            & .swiper-slide {
+                            }
+                        }
+                        & .swiper-pagination{
+                            & .swiper-pagination-bullet{
+                                width: 10px;
+                                &.swiper-pagination-bullet-active {
+                                    width: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .modal {
+            &.testimonialDetail {
+                & .card {
+                    &.testimonialItem {
+                        & .imgOuter{
+                            width:60px;
+                            height:60px;
+                            & img {
+                            }
+                        }
+                        & .cardTitle {
+                        }
+                        & .pera {
+                        }
+                        & .subDetail {
+                            & .univercityName {
+                            }
+                            & .univercityLocation {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .popularCountries {
+            padding: 40px 0;
+            & .sectionHading {
+                & .topHeading {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                & .mainHeading {
+                    font-size: 28px;
+                    line-height: 40px;
+                    &:before {
+                        height: 70px;
+                        width: 5px;
+                    }
+                }
+            }
+            & .cardSection {
+                margin-top: 36px;
+                & .cardOuter {
+                    & .imgOuter {
+                        & img {
+                        }
+                    }
+                    & .countrieName {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+        .testimonialMain, .parentSayMain {
+            & .sectionHeading {
+                font-size: 24px;
+                line-height: 32px;
+                padding-bottom: 32px;
+                & .textColored{
+                }
+            }
+            & .testimonialInner {
+                & .card {
+                    &.testimonialItem {
+                        & .topDot  {
+                        }
+                        & .imgOuter{
+                            & img {
+                            }
+                        }
+                        & .cardTitle {
+                        }
+                        & .pera {
+                        }
+                        & .subDetail {
+                            & .univercityName {
+                            }
+                            & .univercityLocation {
+                            }
+                        }
+                    }
+                }
+                & .swiper {
+                    &.mytestimonial  {
+                        & .swiper-wrapper {
+                            & .swiper-slide {
+                            }
+                        }
+                        & .swiper-pagination{
+                            & .swiper-pagination-bullet{
+                                &.swiper-pagination-bullet-active {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .modal {
+            &.testimonialDetail {
+                & .card {
+                    &.testimonialItem {
+                        & .imgOuter{
+                            width:50px;
+                            height:50px;
+                            & img {
+                            }
+                        }
+                        & .cardTitle {
+                        }
+                        & .pera {
+                        }
+                        & .subDetail {
+                            & .univercityName {
+                            }
+                            & .univercityLocation {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .popularCountries {
+            & .sectionHading {
+                & .topHeading {
+                }
+                & .mainHeading {
+                    font-size: 20px;
+                    line-height: 30px;
+                    &:before {
+                        height: 54px;
+                    }
+                }
+            }
+            & .cardSection {
+                & .cardOuter {
+                    & .imgOuter {
+                        & img {
+                        }
+                    }
+                    & .countrieName {
+                    }
+                }
+            }
+        }
+    }
+
+
+[data-bs-theme=dark] {
+    & [data-page-name=testimonial] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  testimonial end  ]@@@@@@@@@@@@@@@@@@@@@@
+

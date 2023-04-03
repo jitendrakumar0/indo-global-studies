@@ -56,7 +56,7 @@
                         justify-content: center;
                         align-items: center;
                         position: absolute;
-                        right: 4px;
+                        right: 8px;
                         top: 5px;
                         & img{
                             width: 25px;
@@ -73,6 +73,7 @@
                     box-shadow: 0px 1.57219px 22.7967px rgba(0, 0, 0, 0.1);
                     border-radius: 8px;
                     min-height: 222px;
+                    flex-direction: column;
                     & .cardHeader{
                         font-family: 'Poppins';
                         font-style: normal;
@@ -116,6 +117,54 @@
                             font-size: 16px;
                             line-height: 24px;
                         }
+                    }
+                }
+            }
+        }
+        .agentSignUpOnefluid{
+            & .agentSingnUpContainer{
+                & .agentSignUpBox{
+                    background: rgba(255, 255, 255, 0.74);
+                    border: 1px solid #E3E3E3;
+                    border-radius: 20px;
+                    padding: 44px 65px;
+                    & .agentSignUpMainHead{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 26px;
+                        line-height: 39px;
+                        color: black;
+                        margin-bottom: 36px;
+                    }
+                    & .noteBox{
+                        background: rgba(180, 17, 26, 0.03);
+                        border-radius: 20px;
+                        padding: 24px 40px;
+                        margin-bottom: 25px;
+                        & .noteTxt{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 27px;
+                            display: flex;
+                            align-items: center;
+                            color: #B4111A99;
+                        }
+                    }
+                    & .agentSignUpFormInp{
+                        background: rgba(217, 217, 217, 0.07);
+                        border: 1px solid #DFDFDF;
+                        border-radius: 6px;
+                        height: 74px;
+                        padding: 24px 32px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #9B9B9B;
                     }
                 }
             }

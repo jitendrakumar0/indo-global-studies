@@ -422,6 +422,13 @@ body .overflow-auto-hidden {
   border: 1px solid #DFDFDF;
   border-radius: 6px;
   height: 74px;
+  padding: 24px 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9B9B9B;
 }
 
 @media (max-width: 1399.98px) {

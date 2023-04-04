@@ -450,12 +450,81 @@
     }
 
     @include media-breakpoint-down(md) {
+        .testimonialMain, .parentSayMain {
+            & .sectionHeading {
+                font-size: 25px;
+                padding-bottom: 30px;
+                & .textColored{
+                }
+            }
+            & .testimonialInner {
+                & .card {
+                    &.testimonialItem {
+                        & .topDot  {
+                        }
+                        & .imgOuter{
+                            & img {
+                            }
+                        }
+                        & .cardTitle {
+                            font-size: 14px;
+                        }
+                        & .pera {
+                            font-size: 12px;
+                        }
+                        & .subDetail {
+                            font-size: 13px;
+                            & .univercityName {
+                            }
+                            & .univercityLocation {
+                            }
+                        }
+                    }
+                }
+                & .swiper {
+                    &.mytestimonial  {
+                        & .swiper-wrapper {
+                            & .swiper-slide {
+                            }
+                        }
+                        & .swiper-pagination{
+                            & .swiper-pagination-bullet{
+                                &.swiper-pagination-bullet-active {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .popularCountries {
+            & .sectionHading {
+                & .topHeading {
+                }
+                & .mainHeading {
+                    font-size: 25px;
+                    line-height: 30px;
+                    &:before {
+                    }
+                }
+            }
+            & .cardSection {
+                & .cardOuter {
+                    & .imgOuter {
+                        & img {
+                        }
+                    }
+                    & .countrieName {
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
         .testimonialMain, .parentSayMain {
             & .sectionHeading {
-                font-size: 24px;
+                font-size: 22px;
                 line-height: 32px;
                 padding-bottom: 32px;
                 & .textColored{
@@ -529,7 +598,7 @@
                 & .topHeading {
                 }
                 & .mainHeading {
-                    font-size: 20px;
+                    font-size: 22px;
                     line-height: 30px;
                     &:before {
                         height: 54px;
@@ -543,6 +612,8 @@
                         }
                     }
                     & .countrieName {
+                        font-size: 12px;
+                        line-height: 16px;
                     }
                 }
             }

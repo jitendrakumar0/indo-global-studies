@@ -343,7 +343,7 @@
                 padding-bottom: 30px;
                 & .sectionHeading {
                     margin-bottom: 30px;
-                    font-size: 30px;
+                    font-size: 25px;
                     line-height: 35px;
                 }
                 & .accordion {
@@ -370,7 +370,7 @@
                                     }
                                 }
                                 & .accordionHeading {
-                                    font-size: 15px;
+                                    font-size: 14px;
                                     line-height: 20px;
                                 }
                                 &::after {
@@ -382,7 +382,7 @@
                             & .accordion-body {
                                 padding: 0px 35px 20px 80px;
                                 & .accrodionText {
-                                    font-size: 13.7219px;
+                                    font-size: 12px;
                                     line-height: 23px;
                                 }
                                 & .ViewDetailsBtn {
@@ -404,18 +404,19 @@
                 padding-bottom: 30px;
                 & .sectionHeading {
                     margin-bottom: 30px;
-                    font-size: 30px;
-                    line-height: 35px;
+                    font-size: 25px;
+                    line-height: 30px;
                 }
                 & .whyIGScardsOuter {
                     & .card {
                         & .card-body {
                             & .card-heading {
-                                font-size: 16px;
+                                font-size: 14px;
                                 line-height: 20px;
                                 margin-bottom: 10px;
                             }
                             & .card-text {
+                                font-size: 12px;
                             }
                         }
                     }
@@ -431,7 +432,7 @@
                 padding-bottom: 30px;
                 & .sectionHeading {
                     margin-bottom: 20px;
-                    font-size: 23px;
+                    font-size: 22px;
                     line-height: 25px;
                 }
                 & .accordion {
@@ -472,14 +473,17 @@
                             & .accordion-body {
                                 padding: 0px 15px 15px 15px;
                                 & .accrodionText {
-                                    font-size: 12.7219px;
+                                    font-size: 11px;
                                     line-height: 21px;
                                     margin-bottom: 15px;
                                 }
                                 & .ViewDetailsBtn {
-                                    padding: 6px 15px 6px 15px;
-                                    font-size: 13px;
-                                    line-height: 18px;
+                                    // padding: 6px 15px 6px 15px;
+                                    // font-size: 1px;
+                                    // line-height: 18px;
+                                        padding: 8px 28px;
+                                        font-size: 12px;
+                                        line-height: 18px;
                                     &:hover {
                                     }
                                 }
@@ -493,7 +497,7 @@
             & .whyIGSsectionInner {
                 & .sectionHeading {
                     margin-bottom: 20px;
-                    font-size: 23px;
+                    font-size: 22px;
                     line-height: 25px;
                 }
                 & .whyIGScardsOuter {

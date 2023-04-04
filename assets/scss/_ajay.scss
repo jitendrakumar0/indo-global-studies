@@ -167,6 +167,23 @@
             }
         }
     }
+    .howWeHelpSection {
+        & .howWeHelpInner {
+            & .howWeHelpVideo {
+                & .glightVideo {
+                    & .testimonialsImage {
+                        & .vedioIcon {
+                            position: absolute;
+                            margin: auto;
+                            inset: 0;
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -183,7 +200,22 @@
 
 @include media-breakpoint-down(xxl) {}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    .howWeHelpSection {
+        & .howWeHelpInner {
+            & .howWeHelpVideo {
+                & .glightVideo {
+                    & .testimonialsImage {
+                        & .vedioIcon {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(lg) {
     .platformsection {
@@ -217,6 +249,20 @@
             }
         }
     }
+    .howWeHelpSection {
+        & .howWeHelpInner {
+            & .howWeHelpVideo {
+                & .glightVideo {
+                    & .testimonialsImage {
+                        & .vedioIcon {
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -225,13 +271,17 @@
         padding-bottom: 60px;
         & .innerSection {
             & .platformHeading {
-                font-size: 30px;
+                font-size: 25px;
                 line-height: 40px;
                 margin-bottom: 10px;
             }
             & .navTabs {
                 & .nav-pills {
+                    white-space: nowrap;
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
                     & .nav-item {
+                        min-width: 180px !important;
                         height: 40px;
                         & .nav-link  {
                             font-size: 12px;
@@ -260,9 +310,26 @@
                 }
                 & .signUpBtn {
                     & a {
-                        padding: 10px 51px 10px 26px;
-                        font-size: 16px;
-                        line-height: 24px;
+                        // padding: 10px 51px 10px 26px;
+                        // font-size: 16px;
+                        // line-height: 24px;
+                        padding: 8px 28px;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .howWeHelpSection {
+        & .howWeHelpInner {
+            & .howWeHelpVideo {
+                & .glightVideo {
+                    & .testimonialsImage {
+                        & .vedioIcon {
+                            width: 60px;
+                            height: 60px;
+                        }
                     }
                 }
             }
@@ -276,16 +343,12 @@
         padding-bottom: 40px;
         & .innerSection {
             & .platformHeading {
-                font-size: 25px;
+                font-size: 22px;
                 line-height: 30px;
             }
             & .navTabs {
                 & .nav-pills {
-                    white-space: nowrap;
-                    flex-wrap: nowrap;
-                    overflow-x: auto;
                     & .nav-item {
-                        min-width: 180px !important;
                         height: 35px;
                         & .nav-link  {
                             line-height: 15px;

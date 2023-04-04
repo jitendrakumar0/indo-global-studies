@@ -883,7 +883,7 @@
             & .talkToExpertInner {
                 & .talkToExpertInner2 {
                     & .talkToExpertHeading {
-                        font-size: 24px;
+                        font-size: 25px;
                         padding: 20px 10px;
                         & span {
                         }
@@ -907,7 +907,7 @@
         & .popularSeachers {
             & .popularSeachersInner {
                 & .popularSeachersHeading {
-                    font-size: 24px;
+                    font-size: 25px;
                 }
                 & .popularSeachersItems {
                     & .popularSeachersItem {
@@ -980,7 +980,7 @@
         & .howWeHelpSection {
             & .howWeHelpInner {
                 & .howWeHelpHeading {
-                    font-size: 24px;
+                    font-size: 25px;
                 }
                 & .howWeHelpVideo {
                     &::before {
@@ -1195,7 +1195,7 @@
                 padding-top: 70px;
                 padding-bottom: 70px;
                 & .heroSectionHeading {
-                    font-size: 20px;
+                    font-size: 25px;
                     & span {
                     }
                 }
@@ -1210,6 +1210,7 @@
                         & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single {
                         }
                         & .select2-hidden-accessible~.select2>.selection>.select2-selection.select2-selection--single>.select2-selection__rendered {
+                            font-size: 14px;
                             &::before {
                             }
                         }
@@ -1218,6 +1219,7 @@
                 & .heroSectionSearchInput {
                     & input {
                         padding-top: 7px;
+                        font-size: 14px;
                     }
                     & .searchBtn {
                         width: 45px;
@@ -1233,14 +1235,14 @@
                     }
                 }
                 & .heroSectionHeading2 {
-                    font-size: 22px;
+                    font-size: 18px;
                     line-height: 30px;
                 }
                 & .quickTags {
                     & .quickTagsInner {
                         & .quickTag {
                             & a {
-                                font-size: 13px;
+                                font-size: 12px;
                                 line-height: 15px;
                                 padding: 13px 17px;
                             }
@@ -1267,10 +1269,14 @@
                     & .talkToExpertFor {
                         border-radius: 15px;
                         & img {
+
                         }
                         & span {
+                            font-size: 18px;
                         }
                         & a {
+                            font-size: 16px;
+                            line-height: 20px;
                         }
                         &.business {
                             border-left: 1px dashed $white;
@@ -1295,14 +1301,18 @@
                             & .itemTitleWithDetails {
                                 & .itemTitleWithDetailsInner {
                                     & .itemTitle {
+                                        font-size: 14px;
                                     }
                                     & .itemTitleBelowDetails {
                                         & .itemTitleBelowDetailsInner {
                                             & .itemUniversity {
+                                                font-size: 12px;
                                             }
                                             & .itemType {
                                                 & span {
+                                                font-size: 12px;
                                                     & img {
+                                                        margin-top: -3px;
                                                     }
                                                 }
                                             }
@@ -1338,7 +1348,8 @@
                                 & .itemBtnsInner {
                                     & .itemBtn {
                                         & a {
-
+                                            font-size: 12px;
+                                            line-height: 20px;
                                         }
                                     }
                                 }
@@ -1348,13 +1359,16 @@
                 }
                 & .popularSeachersViewAll {
                     & a {
-                        padding: 7px 28px;
-                        font-size: 15px;
+                        padding: 8px 28px;
+                        font-size: 12px;
+                        line-height: 18px;
                     }
                 }
             }
         }
         & .howWeHelpSection {
+            padding-top: 40px;
+            padding-bottom: 50px;
             & .howWeHelpInner {
                 & .howWeHelpHeading {
                     margin-bottom: 0px;
@@ -1385,10 +1399,9 @@
                 }
                 & .howWeHelpPartnerWithUs {
                     & a {
-                        padding: 7px 28px;
-                        font-size: 15px;
-                        &:hover {
-                        }
+                        padding: 8px 28px;
+                        font-size: 12px;
+                        line-height: 18px;
                     }
                 }
             }
@@ -1399,6 +1412,7 @@
         & .heroSection {
             & .heroSectionInner {
                 & .heroSectionHeading {
+                    font-size: 22px;
                     & span {
                     }
                 }
@@ -1428,6 +1442,7 @@
                     }
                 }
                 & .heroSectionHeading2 {
+                    font-size: 16px;
                 }
                 & .quickTags {
                     & .quickTagsInner {
@@ -1449,6 +1464,8 @@
             & .talkToExpertInner {
                 & .talkToExpertInner2 {
                     & .talkToExpertHeading {
+                        font-size: 22px;
+                        // line-height: 26px;
                         & span {
                         }
                     }
@@ -1456,8 +1473,11 @@
                         & img {
                         }
                         & span {
+                            font-size: 16px;
                         }
                         & a {
+                            font-size: 12px;
+                            line-height: 18px;
                         }
                         &.business {
                         }
@@ -1473,6 +1493,7 @@
                 padding-bottom: 30px;
                 & .popularSeachersHeading {
                     margin-bottom: 20px;
+                    font-size: 22px;
                 }
                 & .popularSeachersItems {
                     & .popularSeachersItem {
@@ -1484,6 +1505,7 @@
                             & .itemTitleWithDetails {
                                 & .itemTitleWithDetailsInner {
                                     & .itemTitle {
+                                    
                                     }
                                     & .itemTitleBelowDetails {
                                         & .itemTitleBelowDetailsInner {
@@ -1539,6 +1561,7 @@
         & .howWeHelpSection {
             & .howWeHelpInner {
                 & .howWeHelpHeading {
+                    font-size: 22px;
                 }
                 & .howWeHelpVideo {
                     &::before {

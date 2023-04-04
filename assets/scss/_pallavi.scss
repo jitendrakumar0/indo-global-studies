@@ -299,7 +299,7 @@
                     }
                 }
                 & .swiperBtnsClass{
-                    & .swiper-button-prev{
+                    & .btnPriv{
                         &::after{
                             display: none;
                         }
@@ -317,7 +317,7 @@
                         left: -5%;
                         top: 50%;
                     }
-                    & .swiper-button-next{
+                    & .btnNext{
                         &::after{
                             display: none;
                         }

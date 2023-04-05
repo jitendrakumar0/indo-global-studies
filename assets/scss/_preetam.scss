@@ -334,11 +334,13 @@
         }
         .universityHeroOuter {
             & .universityHeroSection {
-                background-image: url(./../img/universityBg.jpg);
                 height: 300px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: 0% 35%;
+                &.universityInnerHeroSec {
+                    height: 400px;
+                }
                 & .fixBox {
                     width: 250px;
                     & .universityRank {
@@ -355,6 +357,56 @@
                         align-items: center;
                         justify-content: center;
                         padding: 50px 10px;
+                    }
+                }
+                & .iconBox {
+                    position: absolute;
+                    right: 0;
+                    top: 30px;
+                    & .icon {
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        background-color: #B4111A;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                        transition: 0.3s ease-in-out;
+                        & img {
+                            height: 30px;
+                            filter: invert(1);
+                            transition: 0.3s ease-in-out;
+                        }
+                        &:hover {
+                            background-color: #ffffff;
+                            & img {
+                                filter: invert(0);
+                            }
+                        }
+                    }
+                    & .icon2 {
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+                        & img {
+                            height: 30px;
+                            transition: 0.3s ease-in-out;
+                            // filter: invert(1);
+                        }
+                        &:hover {
+                            background-color: #B4111A;
+                            & img {
+                                filter: invert(1);
+                            }
+                        }
                     }
                 }
             }
@@ -443,6 +495,29 @@
                     transform: translateY(-50%);
                 }
             }
+            &.ratingInnerPage {
+                background-color: #B4111A;
+                & .ratingIcon {
+                    & img {
+                        height: 40px;
+                        filter: invert(1);
+                    }
+                }
+                & .ratingSite {
+                    color: #ffffff;
+                }
+                & .ratingValue {
+                    color: #ffffff;
+                }
+                & .ratingBox {
+                    &::before {
+                        background-color: #ffffff;
+                    }
+                    &::after {
+                        background-color: #ffffff;
+                    }
+                }
+            }
         }
         .aboutSection {
             background-color: #f3f3f33b;
@@ -458,6 +533,19 @@
                     width: 28px;
                     margin-right: 15px;
                 }
+            }
+            & .aboutQuestion {
+                color: #90a4b8;
+                font-size: 15px;
+                font-family: "Poppins";
+                font-weight: 500;
+            }
+            & .aboutList {
+                color: #000000;
+                font-size: 15px;
+                font-family: "Poppins";
+                font-weight: 400;
+                margin-bottom: 8px;
             }
             & .aboutText {
                 color: #90a4b8;
@@ -651,6 +739,12 @@
                                         }
                                     }
                                 }
+                            }
+                            & .bodyText {
+                                color: #90a4b8;
+                                font-size: 15px;
+                                font-family: "Poppins";
+                                font-weight: 400;
                             }
                         }
                     }
@@ -1287,6 +1381,22 @@
                     & .universityLogo {
                     }
                 }
+                & .iconBox {
+                    & .icon {
+                        height: 50px;
+                        width: 50px;
+                        & img {
+                            height: 25px;
+                        }
+                    }
+                    & .icon2 {
+                        height: 50px;
+                        width: 50px;
+                        & img {
+                            height: 25px;
+                        }
+                    }
+                }
             }
             & .heroPositionSection {
                 padding-left: 15px;
@@ -1541,6 +1651,16 @@
                     & .universityLogo {
                     }
                 }
+                & .iconBox {
+                    & .icon {
+                        & img {
+                        }
+                    }
+                    & .icon2 {
+                        & img {
+                        }
+                    }
+                }
             }
             & .heroPositionSection {
                 & .heroPositionSectionInner {
@@ -1774,6 +1894,22 @@
                     & .universityRank {
                     }
                     & .universityLogo {
+                    }
+                }
+                & .iconBox {
+                    & .icon {
+                        height: 40px;
+                        width: 40px;
+                        & img {
+                            height: 20px;
+                        }
+                    }
+                    & .icon2 {
+                        height: 40px;
+                        width: 40px;
+                        & img {
+                            height: 20px;
+                        }
                     }
                 }
             }

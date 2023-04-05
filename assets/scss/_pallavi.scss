@@ -371,7 +371,7 @@
                     }
                     & .registerPageFormControl{
                         box-shadow: none !important;
-                        border-color:#adabab!important;
+                        border-color:#ced4da!important;
                         padding: 12px 22px;
                         color: #90a4b8;
                         font-size: 16px;
@@ -384,7 +384,7 @@
                     & .FormControlInpBtn{
                         background-color: #e9ecef !important;
                         height: 49px;
-                        padding: 12px 22px;
+                        padding: 12px;
                         border-color:#adabab!important;
                         border-left: 1px solid #adabab!important;
                         color: black;
@@ -396,10 +396,10 @@
                     & .selection{
                         // padding: 12px 22px;
                         & .select2-selection{
+                            height: 49.5px;
                             padding: 12px 22px !important;
                             border-radius: .375rem !important;
-                            border-color: #adabab !important;
-                            border: 1px solid #adabab !important;
+                            border: 1px solid #ced4da !important;
                         }
                         & .select2-selection__rendered{
                             color: #637383  !important;
@@ -593,6 +593,48 @@
                 }
             }
         }
+        .registerPageFluid{
+            & .registerPageContainer{
+                & .registerPageContainer{
+                    & .registerPageContainerHeadingContainer{
+                        & .registerPageMainHeading{
+                        }
+                        & .registerPageSubHeading{
+                            & .registerPageSubHeadingAnchor{
+                            }
+                        }
+
+                    }
+                    & .registerPageFormControl{
+                        &:focus{
+                        }
+                    }
+                    
+                    & .FormControlInpBtn{
+                        &:hover{
+                        }
+                    }
+                    & .selection{
+                        & .select2-selection{
+                        }
+                        & .select2-selection__rendered{
+                        }
+                    }
+                    & .registerFormCheck{
+                        & .registerFormInp{
+                            &:checked{
+                            }
+                        }
+                        & .registerFormLbl{
+                        }
+                    }
+                    & .registerbtn{
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
@@ -738,6 +780,48 @@
             }
         }
     }
+    .registerPageFluid{
+        & .registerPageContainer{
+            & .registerPageContainer{
+                & .registerPageContainerHeadingContainer{
+                    & .registerPageMainHeading{
+                    }
+                    & .registerPageSubHeading{
+                        & .registerPageSubHeadingAnchor{
+                        }
+                    }
+
+                }
+                & .registerPageFormControl{
+                    &:focus{
+                    }
+                }
+                
+                & .FormControlInpBtn{
+                    &:hover{
+                    }
+                }
+                & .selection{
+                    & .select2-selection{
+                    }
+                    & .select2-selection__rendered{
+                    }
+                }
+                & .registerFormCheck{
+                    & .registerFormInp{
+                        &:checked{
+                        }
+                    }
+                    & .registerFormLbl{
+                    }
+                }
+                & .registerbtn{
+                    &:hover{
+                    }
+                }
+            }
+        }
+    }
 }
 
     @include media-breakpoint-down(lg) {
@@ -854,6 +938,48 @@
                         right: 5%;
                     }
         
+                }
+            }
+        }
+        .registerPageFluid{
+            & .registerPageContainer{
+                & .registerPageContainer{
+                    & .registerPageContainerHeadingContainer{
+                        & .registerPageMainHeading{
+                        }
+                        & .registerPageSubHeading{
+                            & .registerPageSubHeadingAnchor{
+                            }
+                        }
+
+                    }
+                    & .registerPageFormControl{
+                        &:focus{
+                        }
+                    }
+                    
+                    & .FormControlInpBtn{
+                        &:hover{
+                        }
+                    }
+                    & .selection{
+                        & .select2-selection{
+                        }
+                        & .select2-selection__rendered{
+                        }
+                    }
+                    & .registerFormCheck{
+                        & .registerFormInp{
+                            &:checked{
+                            }
+                        }
+                        & .registerFormLbl{
+                        }
+                    }
+                    & .registerbtn{
+                        &:hover{
+                        }
+                    }
                 }
             }
         }
@@ -995,6 +1121,48 @@
                         top: 52%;
                     }
         
+                }
+            }
+        }
+        .registerPageFluid{
+            & .registerPageContainer{
+                & .registerPageContainer{
+                    & .registerPageContainerHeadingContainer{
+                        & .registerPageMainHeading{
+                        }
+                        & .registerPageSubHeading{
+                            & .registerPageSubHeadingAnchor{
+                            }
+                        }
+
+                    }
+                    & .registerPageFormControl{
+                        &:focus{
+                        }
+                    }
+                    
+                    & .FormControlInpBtn{
+                        &:hover{
+                        }
+                    }
+                    & .selection{
+                        & .select2-selection{
+                        }
+                        & .select2-selection__rendered{
+                        }
+                    }
+                    & .registerFormCheck{
+                        & .registerFormInp{
+                            &:checked{
+                            }
+                        }
+                        & .registerFormLbl{
+                        }
+                    }
+                    & .registerbtn{
+                        &:hover{
+                        }
+                    }
                 }
             }
         }
@@ -1142,6 +1310,52 @@
                         top: 52%;
                     }
         
+                }
+            }
+        }
+        .registerPageFluid{
+            & .registerPageContainer{
+                padding: 30px 0;
+                & .registerPageContainer{
+                    border: 0;
+                    padding: 0;
+                    & .registerPageContainerHeadingContainer{
+                        margin: 0 0 16px 0;
+                        & .registerPageMainHeading{
+                        }
+                        & .registerPageSubHeading{
+                            & .registerPageSubHeadingAnchor{
+                            }
+                        }
+
+                    }
+                    & .registerPageFormControl{
+                        &:focus{
+                        }
+                    }
+                    
+                    & .FormControlInpBtn{
+                        &:hover{
+                        }
+                    }
+                    & .selection{
+                        & .select2-selection{
+                        }
+                        & .select2-selection__rendered{
+                        }
+                    }
+                    & .registerFormCheck{
+                        & .registerFormInp{
+                            &:checked{
+                            }
+                        }
+                        & .registerFormLbl{
+                        }
+                    }
+                    & .registerbtn{
+                        &:hover{
+                        }
+                    }
                 }
             }
         }

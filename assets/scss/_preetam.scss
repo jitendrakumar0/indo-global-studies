@@ -332,6 +332,443 @@
                 }
             }
         }
+        .universityHeroOuter {
+            & .universityHeroSection {
+                height: 300px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0% 35%;
+                &.universityInnerHeroSec {
+                    height: 400px;
+                }
+                & .fixBox {
+                    width: 250px;
+                    & .universityRank {
+                        font-size: 36px;
+                        font-weight: 600;
+                        color: #ffffff;
+                        font-family: 'Poppins';
+                        margin-top: 30px;
+                    }
+                    & .universityLogo {
+                        height: 180px;
+                        border-radius: 10px 10px 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 50px 10px;
+                    }
+                }
+                & .iconBox {
+                    position: absolute;
+                    right: 0;
+                    top: 30px;
+                    & .icon {
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        background-color: #B4111A;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                        transition: 0.3s ease-in-out;
+                        & img {
+                            height: 30px;
+                            filter: invert(1);
+                            transition: 0.3s ease-in-out;
+                        }
+                        &:hover {
+                            background-color: #ffffff;
+                            & img {
+                                filter: invert(0);
+                            }
+                        }
+                    }
+                    & .icon2 {
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+                        & img {
+                            height: 30px;
+                            transition: 0.3s ease-in-out;
+                            // filter: invert(1);
+                        }
+                        &:hover {
+                            background-color: #B4111A;
+                            & img {
+                                filter: invert(1);
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroPositionSection {
+                position: absolute;
+                bottom: 0;
+                height: 140px;
+                padding-left: 275px;
+                width: 100%;
+                & .heroPositionSectionInner {
+                    & .universityName {
+                        font-size: 32px;
+                        font-family: 'Poppins';
+                        color: #FFFFFF;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+                    & .univetsityLocation {
+                        font-size: 16px;
+                        font-family: 'Poppins';
+                        color: #FFFFFF;
+                        font-weight: 400;
+                        display: flex;
+                        align-items: center;
+                        & img {
+                            height: 20px;
+                            margin-right: 10px;
+                            filter: invert(1);
+                        }
+                    }
+                    & .knowMoreBtn {
+                        background: #fff;
+                        font-weight: 600;
+                        font-size: 20px;
+                        padding: 15px 30px !important;
+                        font-family: 'Poppins';
+                        border-radius: 0.25rem;
+                        color: #B4111A;
+                        transition: 0.3s ease-in-out;
+                        &:hover {
+                            background-color: #B4111A;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .ratingSection {
+            background-color: #f6f8f9;
+            & .ratingIcon {
+                & img {
+                    height: 40px;
+                }
+            }
+            & .ratingSite {
+                font-size: 14px;
+                color: #212529;
+                font-family: "Poppins";
+            }
+            & .ratingValue {
+                font-size: 16px;
+                font-weight: 600;
+                color: #212529;
+                font-family: "Poppins";
+            }
+            & .ratingBox {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    height: 20px;
+                    width: 2px;
+                    background-color: #212529;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 20px;
+                    width: 2px;
+                    background-color: #212529;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+            }
+            &.ratingInnerPage {
+                background-color: #B4111A;
+                & .ratingIcon {
+                    & img {
+                        height: 40px;
+                        filter: invert(1);
+                    }
+                }
+                & .ratingSite {
+                    color: #ffffff;
+                }
+                & .ratingValue {
+                    color: #ffffff;
+                }
+                & .ratingBox {
+                    &::before {
+                        background-color: #ffffff;
+                    }
+                    &::after {
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+        .aboutSection {
+            background-color: #f3f3f33b;
+            & .aboutHeading {
+                font-size: 20px;
+                color: #000000;
+                font-weight: 600;
+                font-family: "Poppins";
+                display: flex;
+                align-items: center;
+                line-height: 20px;
+                & img {
+                    width: 28px;
+                    margin-right: 15px;
+                }
+            }
+            & .aboutQuestion {
+                color: #90a4b8;
+                font-size: 15px;
+                font-family: "Poppins";
+                font-weight: 500;
+            }
+            & .aboutList {
+                color: #000000;
+                font-size: 15px;
+                font-family: "Poppins";
+                font-weight: 400;
+                margin-bottom: 8px;
+            }
+            & .aboutText {
+                color: #90a4b8;
+                font-size: 15px;
+                font-family: "Poppins";
+                font-weight: 400;
+            }
+            & .videoBoxOuter {
+                height: 380px;
+                overflow-y: auto;
+                & .videoImage {
+                    height: 180px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    & .thumbImg {
+                        height: 100%;
+                    }
+                    & .vedioIcon {
+                        position: absolute;
+                        height: 50px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        & .vedioIcon {
+                            transform: translate(-50%, -50%) scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+        .gallerySection {
+            background-color: #f3f3f33b;
+            & .galleryHeading {
+                font-size: 20px;
+                color: #000000;
+                font-weight: 600;
+                font-family: "Poppins";
+                display: flex;
+                align-items: center;
+                line-height: 20px;
+                & img {
+                    height: 20px;
+                    margin-right: 15px;
+                }
+            }
+            & .gallerySectionImmer {
+                overflow-x: auto;
+            }
+            & .galleryBox {
+                border-radius: 10px;
+                overflow: hidden;
+                height: 200px;
+                width: 300px;
+                & .universityImage {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                & .hoverBox {
+                    background-color: rgba(#000, 0.3);
+                    opacity: 0;
+                    transform: scale(0);
+                    transition: all 0.3s ease-in-out;
+                    & .imgBox {
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 6px;
+                        background-color: #000;
+                        opacity: 0.9;
+                        & img {
+                            filter: brightness(10);
+                            height: 15px;
+                        }
+                    }
+                }
+                &:hover {
+                    & .hoverBox {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        .accordianSection {
+            background-color: #f3f3f33b;
+            & .accordion {
+                & .accordion-item {
+                    margin-bottom: 16px;
+                    border: 0 !important;
+                    & .accordion-header {
+                        & .accordion-button {
+                            font-size: 17px !important;
+                            font-weight: 600;
+                            padding: 20px 15px;
+                            background-color: #B4111A;
+                            color: #ffffff;
+                            border-radius: 5px;
+                            &.collapsed {
+                                background-color: #ffffff;
+                                color: #000000;
+                            }
+                            &:not(.collapsed) {
+                                &::after {
+                                    background-image: url(./../img/svg/arrowwhite.svg) !important;
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            background-color: #f3f3f33b;
+                            & .tabBtn {
+                                color: black;
+                                background-color: #fff45a;
+                                font-weight: 400;
+                                font-size: 16px;
+                                height: 36px;
+                                width: 108px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 0.25rem;
+                            }
+                            & .courseCardWrapper {
+                                overflow-x: auto;
+                                & .coursecard {
+                                    width: 400px;
+                                    border-radius: 12px;
+                                    background-color: #ffffff;
+                                    & .courseHeading {
+                                        font-size: 20px;
+                                        color: #000D19;
+                                        font-weight: 500;
+                                        font-family: "Poppins";
+                                    }
+                                    & .rightArrow {}
+                                    & .courseFee {
+                                        font-size: 16px;
+                                        color: #000000;
+                                        font-family: "Poppins";
+                                        font-weight: 400;
+                                    }
+                                    & .coursePrice {
+                                        color: #90a4b8;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        font-family: "Poppins";
+                                    }
+                                    & .clockIcon {
+                                        width: 28px;
+                                    }
+                                    & .ratingIcon {
+                                        & img {
+                                            height: 30px;
+                                        }
+                                    }
+                                    & .ratingSite {
+                                        font-size: 14px;
+                                        color: #B4111A;
+                                        font-weight: 500;
+                                        font-family: "Poppins";
+                                    }
+                                    & .ratingValue {
+                                        color: #90a4b8;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        font-family: "Poppins";
+                                    }
+                                    & .ratingBox {
+                                        position: relative;
+                                        &::before {
+                                            position: absolute;
+                                            content: '';
+                                            height: 15px;
+                                            width: 2px;
+                                            background-color: #90a4b8;
+                                            bottom: 5px;
+                                            left: 0;
+                                        }
+                                        &::after {
+                                            position: absolute;
+                                            content: '';
+                                            height: 15px;
+                                            width: 2px;
+                                            background-color: #90a4b8;
+                                            bottom: 5px;
+                                            right: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            & .bodyText {
+                                color: #90a4b8;
+                                font-size: 15px;
+                                font-family: "Poppins";
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mapSection {
+            & .mapHeading {
+                font-size: 20px;
+                color: #000000;
+                font-weight: 600;
+                font-family: "Poppins";
+                display: flex;
+                align-items: center;
+                line-height: 20px;
+                & img {
+                    width: 28px;
+                    margin-right: 15px;
+                }
+            }
+            & .mapouter {
+                height: 400px;
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -402,7 +839,6 @@
                 }
             }
         }
-        
         .footer {
             & .footerHeading {
             }
@@ -447,6 +883,145 @@
                     &:nth-child(2) {
                     }
                 }
+            }
+        }
+        .universityHeroOuter {
+            & .universityHeroSection {
+                & .fixBox {
+                    & .universityRank {
+                    }
+                    & .universityLogo {
+                    }
+                }
+            }
+            & .heroPositionSection {
+                & .heroPositionSectionInner {
+                    & .universityName {
+                    }
+                    & .univetsityLocation {
+                        & img {
+                        }
+                    }
+                    & .knowMoreBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        .ratingSection {
+            & .ratingIcon {
+                & img {
+                }
+            }
+            & .ratingSite {
+            }
+            & .ratingValue {
+            }
+            & .ratingBox {
+                &::before {
+                }
+                &::after {
+                }
+            }
+        }
+        .aboutSection {
+            & .aboutHeading {
+                & img {
+                }
+            }
+            & .aboutText {
+            }
+            & .videoBoxOuter {
+                & .videoImage {
+                    & .thumbImg {
+                    }
+                    & .vedioIcon {
+                    }
+                    &:hover {
+                        & .vedioIcon {
+                        }
+                    }
+                }
+            }
+        }
+        .gallerySection {
+            & .galleryHeading {
+                & img {
+                }
+            }
+            & .gallerySectionImmer {
+            }
+            & .galleryBox {
+                & .universityImage {
+                }
+                & .hoverBox {
+                    & .imgBox {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .hoverBox {
+                    }
+                }
+            }
+        }
+        .accordianSection {
+            & .accordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            &.collapsed {
+                            }
+                            &:not(.collapsed) {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            & .tabBtn {
+                            }
+                            & .courseCardWrapper {
+                                & .coursecard {
+                                    & .courseHeading {
+                                    }
+                                    & .rightArrow {}
+                                    & .courseFee {
+                                    }
+                                    & .coursePrice {
+                                    }
+                                    & .clockIcon {
+                                    }
+                                    & .ratingIcon {
+                                        & img {
+                                        }
+                                    }
+                                    & .ratingSite {
+                                    }
+                                    & .ratingValue {
+                                    }
+                                    & .ratingBox {
+                                        &::before {
+                                        }
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mapSection {
+            & .mapHeading {
+                & img {
+                }
+            }
+            & .mapouter {
             }
         }
     }
@@ -564,6 +1139,145 @@
                 }
             }
         }
+        .universityHeroOuter {
+            & .universityHeroSection {
+                & .fixBox {
+                    & .universityRank {
+                    }
+                    & .universityLogo {
+                    }
+                }
+            }
+            & .heroPositionSection {
+                & .heroPositionSectionInner {
+                    & .universityName {
+                    }
+                    & .univetsityLocation {
+                        & img {
+                        }
+                    }
+                    & .knowMoreBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        .ratingSection {
+            & .ratingIcon {
+                & img {
+                }
+            }
+            & .ratingSite {
+            }
+            & .ratingValue {
+            }
+            & .ratingBox {
+                &::before {
+                }
+                &::after {
+                }
+            }
+        }
+        .aboutSection {
+            & .aboutHeading {
+                & img {
+                }
+            }
+            & .aboutText {
+            }
+            & .videoBoxOuter {
+                & .videoImage {
+                    & .thumbImg {
+                    }
+                    & .vedioIcon {
+                    }
+                    &:hover {
+                        & .vedioIcon {
+                        }
+                    }
+                }
+            }
+        }
+        .gallerySection {
+            & .galleryHeading {
+                & img {
+                }
+            }
+            & .gallerySectionImmer {
+            }
+            & .galleryBox {
+                & .universityImage {
+                }
+                & .hoverBox {
+                    & .imgBox {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .hoverBox {
+                    }
+                }
+            }
+        }
+        .accordianSection {
+            & .accordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            &.collapsed {
+                            }
+                            &:not(.collapsed) {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            & .tabBtn {
+                            }
+                            & .courseCardWrapper {
+                                & .coursecard {
+                                    & .courseHeading {
+                                    }
+                                    & .rightArrow {}
+                                    & .courseFee {
+                                    }
+                                    & .coursePrice {
+                                    }
+                                    & .clockIcon {
+                                    }
+                                    & .ratingIcon {
+                                        & img {
+                                        }
+                                    }
+                                    & .ratingSite {
+                                    }
+                                    & .ratingValue {
+                                    }
+                                    & .ratingBox {
+                                        &::before {
+                                        }
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mapSection {
+            & .mapHeading {
+                & img {
+                }
+            }
+            & .mapouter {
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
@@ -657,6 +1371,182 @@
                     &:nth-child(2) {
                     }
                 }
+            }
+        }
+        .universityHeroOuter {
+            & .universityHeroSection {
+                & .fixBox {
+                    & .universityRank {
+                    }
+                    & .universityLogo {
+                    }
+                }
+                & .iconBox {
+                    & .icon {
+                        height: 50px;
+                        width: 50px;
+                        & img {
+                            height: 25px;
+                        }
+                    }
+                    & .icon2 {
+                        height: 50px;
+                        width: 50px;
+                        & img {
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+            & .heroPositionSection {
+                padding-left: 15px;
+                position: static !important;
+                height: unset;
+                & .heroPositionSectionInner {
+                    & .universityName {
+                        font-size: 28px;
+                        color: #212529;
+                    }
+                    & .univetsityLocation {
+                        color: #697988;
+                        margin-bottom: 16px;
+                        & img {
+                            filter: invert(0.4);
+                        }
+                    }
+                    & .knowMoreBtn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        color: #B4111A;
+                        border: 1px solid #B4111A;
+                        background-color: white;
+                        line-height: normal;
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        .ratingSection {
+            & .ratingIcon {
+                & img {
+                }
+            }
+            & .ratingSite {
+            }
+            & .ratingValue {
+            }
+            & .ratingBox {
+                &::before {
+                }
+                &::after {
+                }
+            }
+        }
+        .aboutSection {
+            & .aboutHeading {
+                & img {
+                }
+            }
+            & .aboutText {
+            }
+            & .videoBoxOuter {
+                & .videoImage {
+                    max-width: 340px;
+                    margin: auto;
+                    & .thumbImg {
+                    }
+                    & .vedioIcon {
+                    }
+                    &:hover {
+                        & .vedioIcon {
+                        }
+                    }
+                }
+            }
+        }
+        .gallerySection {
+            & .galleryHeading {
+                & img {
+                }
+            }
+            & .gallerySectionImmer {
+            }
+            & .galleryBox {
+                & .universityImage {
+                }
+                & .hoverBox {
+                    & .imgBox {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .hoverBox {
+                    }
+                }
+            }
+        }
+        .accordianSection {
+            & .accordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            &.collapsed {
+                            }
+                            &:not(.collapsed) {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            & .tabBtn {
+                            }
+                            & .courseCardWrapper {
+                                & .coursecard {
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                    margin-top: 10px;
+                                    & .courseHeading {
+                                    }
+                                    & .rightArrow {}
+                                    & .courseFee {
+                                    }
+                                    & .coursePrice {
+                                    }
+                                    & .clockIcon {
+                                    }
+                                    & .ratingIcon {
+                                        & img {
+                                        }
+                                    }
+                                    & .ratingSite {
+                                    }
+                                    & .ratingValue {
+                                    }
+                                    & .ratingBox {
+                                        &::before {
+                                        }
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mapSection {
+            & .mapHeading {
+                & img {
+                }
+            }
+            & .mapouter {
             }
         }
     }
@@ -753,6 +1643,158 @@
                 }
             }
         }
+        .universityHeroOuter {
+            & .universityHeroSection {
+                & .fixBox {
+                    & .universityRank {
+                    }
+                    & .universityLogo {
+                    }
+                }
+                & .iconBox {
+                    & .icon {
+                        & img {
+                        }
+                    }
+                    & .icon2 {
+                        & img {
+                        }
+                    }
+                }
+            }
+            & .heroPositionSection {
+                & .heroPositionSectionInner {
+                    & .universityName {
+                        font-size: 26px;
+                    }
+                    & .univetsityLocation {
+                        & img {
+                        }
+                    }
+                    & .knowMoreBtn {
+                        font-size: 16px;
+                        height: 56px;
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        .ratingSection {
+            & .ratingIcon {
+                & img {
+                }
+            }
+            & .ratingSite {
+            }
+            & .ratingValue {
+            }
+            & .ratingBox {
+                &::before {
+                }
+                &::after {
+                }
+            }
+        }
+        .aboutSection {
+            & .aboutHeading {
+                & img {
+                }
+            }
+            & .aboutText {
+            }
+            & .videoBoxOuter {
+                & .videoImage {
+                    & .thumbImg {
+                    }
+                    & .vedioIcon {
+                    }
+                    &:hover {
+                        & .vedioIcon {
+                        }
+                    }
+                }
+            }
+        }
+        .gallerySection {
+            & .galleryHeading {
+                & img {
+                }
+            }
+            & .gallerySectionImmer {
+            }
+            & .galleryBox {
+                & .universityImage {
+                }
+                & .hoverBox {
+                    & .imgBox {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .hoverBox {
+                    }
+                }
+            }
+        }
+        .accordianSection {
+            & .accordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            &.collapsed {
+                            }
+                            &:not(.collapsed) {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            & .tabBtn {
+                            }
+                            & .courseCardWrapper {
+                                & .coursecard {
+                                    & .courseHeading {
+                                    }
+                                    & .rightArrow {}
+                                    & .courseFee {
+                                    }
+                                    & .coursePrice {
+                                    }
+                                    & .clockIcon {
+                                    }
+                                    & .ratingIcon {
+                                        & img {
+                                        }
+                                    }
+                                    & .ratingSite {
+                                    }
+                                    & .ratingValue {
+                                    }
+                                    & .ratingBox {
+                                        &::before {
+                                        }
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mapSection {
+            & .mapHeading {
+                & img {
+                }
+            }
+            & .mapouter {
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
@@ -844,6 +1886,164 @@
                     &:nth-child(2) {
                     }
                 }
+            }
+        }
+        .universityHeroOuter {
+            & .universityHeroSection {
+                & .fixBox {
+                    & .universityRank {
+                    }
+                    & .universityLogo {
+                    }
+                }
+                & .iconBox {
+                    & .icon {
+                        height: 40px;
+                        width: 40px;
+                        & img {
+                            height: 20px;
+                        }
+                    }
+                    & .icon2 {
+                        height: 40px;
+                        width: 40px;
+                        & img {
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+            & .heroPositionSection {
+                & .heroPositionSectionInner {
+                    & .universityName {
+                        font-size: 24px;
+                    }
+                    & .univetsityLocation {
+                        & img {
+                        }
+                    }
+                    & .knowMoreBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        .ratingSection {
+            & .ratingIcon {
+                & img {
+                }
+            }
+            & .ratingSite {
+            }
+            & .ratingValue {
+            }
+            & .ratingBox {
+                &::before {
+                }
+                &::after {
+                }
+            }
+        }
+        .aboutSection {
+            & .aboutHeading {
+                & img {
+                }
+            }
+            & .aboutText {
+            }
+            & .videoBoxOuter {
+                height: unset;
+                & .videoImage {
+                    max-width: 100%;
+                    & .thumbImg {
+                    }
+                    & .vedioIcon {
+                    }
+                    &:hover {
+                        & .vedioIcon {
+                        }
+                    }
+                }
+            }
+        }
+        .gallerySection {
+            & .galleryHeading {
+                & img {
+                }
+            }
+            & .gallerySectionImmer {
+            }
+            & .galleryBox {
+                & .universityImage {
+                }
+                & .hoverBox {
+                    & .imgBox {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .hoverBox {
+                    }
+                }
+            }
+        }
+        .accordianSection {
+            & .accordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            &.collapsed {
+                            }
+                            &:not(.collapsed) {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            & .tabBtn {
+                            }
+                            & .courseCardWrapper {
+                                & .coursecard {
+                                    & .courseHeading {
+                                    }
+                                    & .rightArrow {}
+                                    & .courseFee {
+                                    }
+                                    & .coursePrice {
+                                    }
+                                    & .clockIcon {
+                                    }
+                                    & .ratingIcon {
+                                        & img {
+                                        }
+                                    }
+                                    & .ratingSite {
+                                    }
+                                    & .ratingValue {
+                                    }
+                                    & .ratingBox {
+                                        &::before {
+                                        }
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mapSection {
+            & .mapHeading {
+                & img {
+                }
+            }
+            & .mapouter {
             }
         }
     }

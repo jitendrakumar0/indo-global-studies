@@ -339,6 +339,110 @@
                 }
             }
         }
+        .registerPageFluid{
+            & .registerPageContainer{
+                padding: 100px 0;
+                & .registerPageContainer{
+                    padding: 25px;
+                    border: 1px solid #adabab;
+                    border-radius: 8px;
+                    & .registerPageContainerHeadingContainer{
+                        margin: 20px 0px 40px 0px;
+                        & .registerPageMainHeading{
+                            font-size: 25px;
+                            font-weight: 500;
+                            color: black;
+                            margin-bottom: .5rem;
+                        }
+                        & .registerPageSubHeading{
+                            font-size: 18px;
+                            color: #90a4b8;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            & .registerPageSubHeadingAnchor{
+                                color: #b20e19;
+                                font-weight: 600;
+                                margin-left: 5px;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                            }
+                        }
+
+                    }
+                    & .registerPageFormControl{
+                        box-shadow: none !important;
+                        border-color:#adabab!important;
+                        padding: 12px 22px;
+                        color: #90a4b8;
+                        font-size: 16px;
+                        margin-top: 1rem;
+                        &:focus{
+                            border-color: #b20e19 !important;
+                        }
+                    }
+                    
+                    & .FormControlInpBtn{
+                        background-color: #e9ecef !important;
+                        height: 49px;
+                        padding: 12px 22px;
+                        border-color:#adabab!important;
+                        border-left: 1px solid #adabab!important;
+                        color: black;
+                        margin-top: 16px;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                    & .selection{
+                        // padding: 12px 22px;
+                        & .select2-selection{
+                            padding: 12px 22px !important;
+                            border-radius: .375rem !important;
+                            border-color: #adabab !important;
+                            border: 1px solid #adabab !important;
+                        }
+                        & .select2-selection__rendered{
+                            color: #637383  !important;
+                            font-size: 16px !important;
+                            font-weight: 400 !important;
+                        }
+                    }
+                    & .registerFormCheck{
+                        margin-bottom: 2rem;
+                        margin-top: 16px;
+                        & .registerFormInp{
+                            box-shadow: none !important;
+                            border-color: rgba(0,0,0,.25) !important;
+                            &:checked{
+                                background-color: #b20e19 !important;
+                                border-color: #b20e19;
+                            }
+                        }
+                        & .registerFormLbl{
+                            color: #90a4be;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                    & .registerbtn{
+                        background-color: #b20e19;
+                        border: none;
+                        font-weight: bold;
+                        padding: 15px;
+                        color: white;
+                        width: 100%;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: white;
+                            color: #b20e19;
+                            border-color: #b20e19;
+                            border: 1px solid;
+                            transition: 0.3s linear;
+                        }
+                    }
+                }
+            }
+        }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
